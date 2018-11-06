@@ -3,15 +3,15 @@ package Modelo;
 public abstract class PersonasTuristicas {
 
     protected String nombre, apellido, dni, email, telefono;
-    protected int cantReservas, edad, destino;
+    protected int edad, destino;
 
-    public PersonasTuristicas(String nombre, String apellido, String dni, String email, String telefono, int cantReservas, int edad, int destino) {
+    public PersonasTuristicas(String nombre, String apellido, String dni, String email, String telefono, int edad, int destino) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
         this.email = email;
         this.telefono = telefono;
-        this.cantReservas = cantReservas;
+    
         this.edad = edad;
         this.destino = destino;
     }
@@ -56,14 +56,6 @@ public abstract class PersonasTuristicas {
         this.telefono = telefono;
     }
 
-    public int getCantReservas() {
-        return cantReservas;
-    }
-
-    public void setCantReservas(int cantReservas) {
-        this.cantReservas = cantReservas;
-    }
-
     public int getEdad() {
         return edad;
     }
@@ -101,52 +93,52 @@ public abstract class PersonasTuristicas {
         }
     }
 
-    public double costoTotal(int cant, String destino) {
+    public double costoTotal(String destino) {
         double precioFinal = 0.00;
         double precio;
         if (destino.equalsIgnoreCase("Amazonas")) {
             precio = 100.00;
-            precioFinal = precio * cant;
+            precioFinal = precio;
             return precioFinal;
         }
         if (destino.equalsIgnoreCase("Trujillo")) {
             precio = 60.00;
-            precioFinal = precio * cant;
+            precioFinal = precio;
             return precioFinal;
         }
         if (destino.equalsIgnoreCase("Lima")) {
             precio = 65.00;
-            precioFinal = precio * cant;
+            precioFinal = precio ;
             return precioFinal;
         }
         if (destino.equalsIgnoreCase("Ica")) {
             precio = 50.00;
-            precioFinal = precio * cant;
+            precioFinal = precio ;
             return precioFinal;
         }
         if (destino.equalsIgnoreCase("Puno")) {
             precio = 70.00;
-            precioFinal = precio * cant;
+            precioFinal = precio;
             return precioFinal;
         }
         if (destino.equalsIgnoreCase("Cuzco")) {
             precio = 59.00;
-            precioFinal = precio * cant;
+            precioFinal = precio;
             return precioFinal;
         }
         if (destino.equalsIgnoreCase("Arequipa")) {
             precio = 50.00;
-            precioFinal = precio * cant;
+            precioFinal = precio;
             return precioFinal;
         }
         if (destino.equalsIgnoreCase("Ayacucho")) {
             precio = 100.00;
-            precioFinal = precio * cant;
+            precioFinal = precio;
             return precioFinal;
         }
         if (destino.equalsIgnoreCase("")) {
             precio = Double.parseDouble("");
-            precioFinal = precio * cant;
+            precioFinal = precio;
             return precioFinal;
 
         }
@@ -168,7 +160,6 @@ public abstract class PersonasTuristicas {
                 + "DNI\t\t" + getDni() + "\n"
                 + "Telefono\t\t" + getTelefono() + "\n"
                 + "Email\t\t" + getEmail() + "\n"
-                + "Cantidad de Reserva\t" + getCantReservas() + "\n"
                 + "Destino\t\t" + seleccioneLugar() + "\n"
                 + "Total a pagar\t\t:" + totalaPagar() + "\n";
         

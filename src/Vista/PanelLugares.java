@@ -5,7 +5,7 @@
  */
 package Vista;
 
-import Controlador.ArchivoNuevosDestinos;
+
 import Controlador.ArchivoTuristas;
 import Modelo.PersonasTuristicas;
 import java.awt.Image;
@@ -16,7 +16,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.RowFilter;
 import javax.swing.table.TableRowSorter;
-import Modelo.NuevosLugaresAgregados;
 import Modelo.PersonaTuristaExtranjero;
 import Modelo.PersonaTuristaNacional;
 import Modelo.PersonaTuristaUniversitario;
@@ -28,11 +27,9 @@ import javax.swing.JFileChooser;
 
 public class PanelLugares extends javax.swing.JPanel {
 
-    private NuevosLugaresAgregados nla;
     private PersonasTuristicas pt;
     private ArchivoTuristas al;
     private TableRowSorter trsFiltro;
-    private ArchivoNuevosDestinos aD;
     String anl[] = new String [1];
 
     public PanelLugares() {
@@ -43,23 +40,21 @@ public class PanelLugares extends javax.swing.JPanel {
         txtNombre.setEnabled(false);
         txtApellido.setEnabled(false);
         asi.setEnabled(false);
+        txtEdad1.setEnabled(false);
+        busN1.setEnabled(false);
         txtDNI.setEnabled(false);
         txtCorreo.setEnabled(false);
         txtTelefono.setEnabled(false);
-        Pasaje.setValue(0);
         cboDestino.setSelectedIndex(0);
         txtPrecio.setEnabled(false);
         //Botones
         btnNacional.setEnabled(false);
-        btnUniversitario.setEnabled(false);
-        btnExtranjero.setEnabled(false);
         cboDestino.setEnabled(false);
-        Pasaje.setEnabled(false);
         String anl[];
        
         
         al = new ArchivoTuristas("Datos de la reserva.txt");
-        aD = new ArchivoNuevosDestinos("NuevosLugares");
+
 
     }
 
@@ -176,47 +171,47 @@ public class PanelLugares extends javax.swing.JPanel {
         jLabel108 = new javax.swing.JLabel();
         jLabel109 = new javax.swing.JLabel();
         jButton37 = new javax.swing.JButton();
-        jLabel110 = new javax.swing.JLabel();
-        jLabel111 = new javax.swing.JLabel();
+        A10 = new javax.swing.JLabel();
+        a11 = new javax.swing.JLabel();
         jButton38 = new javax.swing.JButton();
-        jLabel112 = new javax.swing.JLabel();
-        jLabel113 = new javax.swing.JLabel();
+        aa11 = new javax.swing.JLabel();
+        aa13 = new javax.swing.JLabel();
         jButton39 = new javax.swing.JButton();
-        jLabel114 = new javax.swing.JLabel();
-        jLabel115 = new javax.swing.JLabel();
+        a13 = new javax.swing.JLabel();
+        aa10 = new javax.swing.JLabel();
         jButton40 = new javax.swing.JButton();
-        jLabel116 = new javax.swing.JLabel();
-        jLabel117 = new javax.swing.JLabel();
+        a12 = new javax.swing.JLabel();
+        a15 = new javax.swing.JLabel();
         jButton41 = new javax.swing.JButton();
-        jLabel118 = new javax.swing.JLabel();
+        aa14 = new javax.swing.JLabel();
         jButton42 = new javax.swing.JButton();
-        jLabel119 = new javax.swing.JLabel();
-        jLabel120 = new javax.swing.JLabel();
+        aa15 = new javax.swing.JLabel();
+        a16 = new javax.swing.JLabel();
         jButton43 = new javax.swing.JButton();
-        jLabel121 = new javax.swing.JLabel();
-        jLabel122 = new javax.swing.JLabel();
+        aa16 = new javax.swing.JLabel();
+        a17 = new javax.swing.JLabel();
         jButton44 = new javax.swing.JButton();
-        jLabel123 = new javax.swing.JLabel();
-        jLabel124 = new javax.swing.JLabel();
+        aa17 = new javax.swing.JLabel();
+        aa19 = new javax.swing.JLabel();
         jButton45 = new javax.swing.JButton();
-        jLabel125 = new javax.swing.JLabel();
-        jLabel126 = new javax.swing.JLabel();
+        a19 = new javax.swing.JLabel();
+        aa18 = new javax.swing.JLabel();
         jButton46 = new javax.swing.JButton();
-        jLabel127 = new javax.swing.JLabel();
+        a18 = new javax.swing.JLabel();
         jButton47 = new javax.swing.JButton();
-        jLabel128 = new javax.swing.JLabel();
-        jLabel129 = new javax.swing.JLabel();
+        a20 = new javax.swing.JLabel();
+        a21 = new javax.swing.JLabel();
         jButton48 = new javax.swing.JButton();
-        jLabel130 = new javax.swing.JLabel();
-        jLabel131 = new javax.swing.JLabel();
-        jLabel132 = new javax.swing.JLabel();
+        aa20 = new javax.swing.JLabel();
+        aa21 = new javax.swing.JLabel();
+        aa23 = new javax.swing.JLabel();
         jButton49 = new javax.swing.JButton();
-        jLabel133 = new javax.swing.JLabel();
-        jLabel134 = new javax.swing.JLabel();
+        a23 = new javax.swing.JLabel();
+        aa22 = new javax.swing.JLabel();
         jButton50 = new javax.swing.JButton();
-        jLabel135 = new javax.swing.JLabel();
-        jLabel136 = new javax.swing.JLabel();
-        jLabel137 = new javax.swing.JLabel();
+        a22 = new javax.swing.JLabel();
+        aa12 = new javax.swing.JLabel();
+        a14 = new javax.swing.JLabel();
         jPanel23 = new javax.swing.JPanel();
         jLabel45 = new javax.swing.JLabel();
         cboDestinoBus = new javax.swing.JComboBox();
@@ -239,13 +234,11 @@ public class PanelLugares extends javax.swing.JPanel {
         txtCorreo = new javax.swing.JTextField();
         cboDestino = new javax.swing.JComboBox();
         jLabel26 = new javax.swing.JLabel();
-        Pasaje = new javax.swing.JSpinner();
         jLabel27 = new javax.swing.JLabel();
         txtPrecio = new javax.swing.JTextField();
         btnNacional = new javax.swing.JButton();
         jLabel30 = new javax.swing.JLabel();
         txtNombre = new javax.swing.JTextField();
-        btnUniversitario = new javax.swing.JButton();
         txtNumCarnet = new javax.swing.JTextField();
         txtDondeVive = new javax.swing.JTextField();
         txtCarnetExtranjero = new javax.swing.JTextField();
@@ -256,7 +249,6 @@ public class PanelLugares extends javax.swing.JPanel {
         jLabel39 = new javax.swing.JLabel();
         jLabel40 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
-        btnExtranjero = new javax.swing.JButton();
         busN1 = new javax.swing.JTextField();
         jLabel46 = new javax.swing.JLabel();
         txtEdad1 = new javax.swing.JTextField();
@@ -267,41 +259,6 @@ public class PanelLugares extends javax.swing.JPanel {
         txtSalidaBoleta = new javax.swing.JTextArea();
         jLabel34 = new javax.swing.JLabel();
         jButton5 = new javax.swing.JButton();
-        jPanel9 = new javax.swing.JPanel();
-        jPanel15 = new javax.swing.JPanel();
-        jLabel11 = new javax.swing.JLabel();
-        txtNuevoDestino = new javax.swing.JTextField();
-        jLabel12 = new javax.swing.JLabel();
-        txtNuevoPrecio = new javax.swing.JTextField();
-        jLabel13 = new javax.swing.JLabel();
-        txtUbicacion = new javax.swing.JTextField();
-        jLabel14 = new javax.swing.JLabel();
-        txtSuperficie = new javax.swing.JTextField();
-        jLabel15 = new javax.swing.JLabel();
-        txtRelieve = new javax.swing.JTextField();
-        jLabel16 = new javax.swing.JLabel();
-        txtCapital = new javax.swing.JTextField();
-        jLabel17 = new javax.swing.JLabel();
-        txtFundacion = new javax.swing.JTextField();
-        jLabel33 = new javax.swing.JLabel();
-        jPanel16 = new javax.swing.JPanel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        txtFauna = new javax.swing.JTextField();
-        txtClima = new javax.swing.JTextField();
-        jLabel20 = new javax.swing.JLabel();
-        txtnuevoImagen = new javax.swing.JTextField();
-        txtFlora = new javax.swing.JTextField();
-        jLabel23 = new javax.swing.JLabel();
-        txtFestividad = new javax.swing.JTextField();
-        btnAgregarDestino = new javax.swing.JButton();
-        txtElimDestino = new javax.swing.JTextField();
-        jButton3 = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel36 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
-        jLabel43 = new javax.swing.JLabel();
-        jLabel44 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         jPanel13 = new javax.swing.JPanel();
         jLabel31 = new javax.swing.JLabel();
@@ -572,6 +529,11 @@ public class PanelLugares extends javax.swing.JPanel {
         jPanel25.add(l2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 10, -1, -1));
 
         jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/a.jpg"))); // NOI18N
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
         jPanel25.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 30, 50, 40));
 
         ll2.setBackground(new java.awt.Color(0, 114, 0));
@@ -587,6 +549,11 @@ public class PanelLugares extends javax.swing.JPanel {
         jPanel25.add(ll3, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 80, -1, -1));
 
         jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/a.jpg"))); // NOI18N
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
         jPanel25.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 30, 50, 40));
 
         l3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -600,6 +567,11 @@ public class PanelLugares extends javax.swing.JPanel {
         jPanel25.add(ll5, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 300, -1, -1));
 
         jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/a.jpg"))); // NOI18N
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
         jPanel25.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 260, 50, 40));
 
         l5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -617,6 +589,11 @@ public class PanelLugares extends javax.swing.JPanel {
         jPanel25.add(l4, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 130, -1, -1));
 
         jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/a.jpg"))); // NOI18N
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
         jPanel25.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 160, 50, 40));
 
         l6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -624,6 +601,11 @@ public class PanelLugares extends javax.swing.JPanel {
         jPanel25.add(l6, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, -1, -1));
 
         jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/a.jpg"))); // NOI18N
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
         jPanel25.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 160, 50, 40));
 
         ll6.setBackground(new java.awt.Color(0, 114, 0));
@@ -637,6 +619,11 @@ public class PanelLugares extends javax.swing.JPanel {
         jPanel25.add(l7, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 240, -1, -1));
 
         jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/a.jpg"))); // NOI18N
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
         jPanel25.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 260, 50, 40));
 
         ll7.setBackground(new java.awt.Color(0, 114, 0));
@@ -654,9 +641,19 @@ public class PanelLugares extends javax.swing.JPanel {
         jPanel25.add(l9, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 240, -1, -1));
 
         jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/a.jpg"))); // NOI18N
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton19ActionPerformed(evt);
+            }
+        });
         jPanel25.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 260, 50, 40));
 
         jButton20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/a.jpg"))); // NOI18N
+        jButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton20ActionPerformed(evt);
+            }
+        });
         jPanel25.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 160, 50, 40));
 
         ll9.setBackground(new java.awt.Color(0, 114, 0));
@@ -853,186 +850,256 @@ public class PanelLugares extends javax.swing.JPanel {
         jPanel26.add(jLabel109, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 340, -1, -1));
 
         jButton37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/a.jpg"))); // NOI18N
+        jButton37.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton37ActionPerformed(evt);
+            }
+        });
         jPanel26.add(jButton37, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 50, 40));
 
-        jLabel110.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel110.setText("A010");
-        jPanel26.add(jLabel110, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
+        A10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        A10.setText("A010");
+        jPanel26.add(A10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
 
-        jLabel111.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel111.setText("A011");
-        jPanel26.add(jLabel111, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, -1, -1));
+        a11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        a11.setText("A011");
+        jPanel26.add(a11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, -1, -1));
 
         jButton38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/a.jpg"))); // NOI18N
+        jButton38.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton38ActionPerformed(evt);
+            }
+        });
         jPanel26.add(jButton38, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 50, 40));
 
-        jLabel112.setBackground(new java.awt.Color(0, 114, 0));
-        jLabel112.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel112.setForeground(new java.awt.Color(0, 114, 0));
-        jLabel112.setText("Disponible");
-        jPanel26.add(jLabel112, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, -1, -1));
+        aa11.setBackground(new java.awt.Color(0, 114, 0));
+        aa11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        aa11.setForeground(new java.awt.Color(0, 114, 0));
+        aa11.setText("Disponible");
+        jPanel26.add(aa11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, -1, -1));
 
-        jLabel113.setBackground(new java.awt.Color(0, 114, 0));
-        jLabel113.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel113.setForeground(new java.awt.Color(0, 114, 0));
-        jLabel113.setText("Disponible");
-        jPanel26.add(jLabel113, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 160, -1, -1));
+        aa13.setBackground(new java.awt.Color(0, 114, 0));
+        aa13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        aa13.setForeground(new java.awt.Color(0, 114, 0));
+        aa13.setText("Disponible");
+        jPanel26.add(aa13, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 160, -1, -1));
 
         jButton39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/a.jpg"))); // NOI18N
+        jButton39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton39ActionPerformed(evt);
+            }
+        });
         jPanel26.add(jButton39, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 120, 50, 40));
 
-        jLabel114.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel114.setText("A013");
-        jPanel26.add(jLabel114, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, -1, -1));
+        a13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        a13.setText("A013");
+        jPanel26.add(a13, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, -1, -1));
 
-        jLabel115.setBackground(new java.awt.Color(0, 114, 0));
-        jLabel115.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel115.setForeground(new java.awt.Color(0, 114, 0));
-        jLabel115.setText("Disponible");
-        jPanel26.add(jLabel115, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, -1, -1));
+        aa10.setBackground(new java.awt.Color(0, 114, 0));
+        aa10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        aa10.setForeground(new java.awt.Color(0, 114, 0));
+        aa10.setText("Disponible");
+        jPanel26.add(aa10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, -1, -1));
 
         jButton40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/a.jpg"))); // NOI18N
+        jButton40.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton40ActionPerformed(evt);
+            }
+        });
         jPanel26.add(jButton40, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 30, 50, 40));
 
-        jLabel116.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel116.setText("A012");
-        jPanel26.add(jLabel116, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 10, -1, -1));
+        a12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        a12.setText("A012");
+        jPanel26.add(a12, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 10, -1, -1));
 
-        jLabel117.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel117.setText("A015");
-        jPanel26.add(jLabel117, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 100, -1, -1));
+        a15.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        a15.setText("A015");
+        jPanel26.add(a15, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 100, -1, -1));
 
         jButton41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/a.jpg"))); // NOI18N
+        jButton41.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton41ActionPerformed(evt);
+            }
+        });
         jPanel26.add(jButton41, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 30, 50, 40));
 
-        jLabel118.setBackground(new java.awt.Color(0, 114, 0));
-        jLabel118.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel118.setForeground(new java.awt.Color(0, 114, 0));
-        jLabel118.setText("Disponible");
-        jPanel26.add(jLabel118, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 70, -1, -1));
+        aa14.setBackground(new java.awt.Color(0, 114, 0));
+        aa14.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        aa14.setForeground(new java.awt.Color(0, 114, 0));
+        aa14.setText("Disponible");
+        jPanel26.add(aa14, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 70, -1, -1));
 
         jButton42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/a.jpg"))); // NOI18N
+        jButton42.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton42ActionPerformed(evt);
+            }
+        });
         jPanel26.add(jButton42, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 120, 50, 40));
 
-        jLabel119.setBackground(new java.awt.Color(0, 114, 0));
-        jLabel119.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel119.setForeground(new java.awt.Color(0, 114, 0));
-        jLabel119.setText("Disponible");
-        jPanel26.add(jLabel119, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, -1, -1));
+        aa15.setBackground(new java.awt.Color(0, 114, 0));
+        aa15.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        aa15.setForeground(new java.awt.Color(0, 114, 0));
+        aa15.setText("Disponible");
+        jPanel26.add(aa15, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, -1, -1));
 
-        jLabel120.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel120.setText("A016");
-        jPanel26.add(jLabel120, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 10, -1, -1));
+        a16.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        a16.setText("A016");
+        jPanel26.add(a16, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 10, -1, -1));
 
         jButton43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/a.jpg"))); // NOI18N
+        jButton43.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton43ActionPerformed(evt);
+            }
+        });
         jPanel26.add(jButton43, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, 50, 40));
 
-        jLabel121.setBackground(new java.awt.Color(0, 114, 0));
-        jLabel121.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel121.setForeground(new java.awt.Color(0, 114, 0));
-        jLabel121.setText("Disponible");
-        jPanel26.add(jLabel121, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 70, -1, -1));
+        aa16.setBackground(new java.awt.Color(0, 114, 0));
+        aa16.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        aa16.setForeground(new java.awt.Color(0, 114, 0));
+        aa16.setText("Disponible");
+        jPanel26.add(aa16, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 70, -1, -1));
 
-        jLabel122.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel122.setText("A017");
-        jPanel26.add(jLabel122, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 100, -1, -1));
+        a17.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        a17.setText("A017");
+        jPanel26.add(a17, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 100, -1, -1));
 
         jButton44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/a.jpg"))); // NOI18N
+        jButton44.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton44ActionPerformed(evt);
+            }
+        });
         jPanel26.add(jButton44, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 120, 50, 40));
 
-        jLabel123.setBackground(new java.awt.Color(0, 114, 0));
-        jLabel123.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel123.setForeground(new java.awt.Color(0, 114, 0));
-        jLabel123.setText("Disponible");
-        jPanel26.add(jLabel123, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 160, -1, -1));
+        aa17.setBackground(new java.awt.Color(0, 114, 0));
+        aa17.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        aa17.setForeground(new java.awt.Color(0, 114, 0));
+        aa17.setText("Disponible");
+        jPanel26.add(aa17, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 160, -1, -1));
 
-        jLabel124.setBackground(new java.awt.Color(0, 114, 0));
-        jLabel124.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel124.setForeground(new java.awt.Color(0, 114, 0));
-        jLabel124.setText("Disponible");
-        jPanel26.add(jLabel124, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 160, -1, -1));
+        aa19.setBackground(new java.awt.Color(0, 114, 0));
+        aa19.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        aa19.setForeground(new java.awt.Color(0, 114, 0));
+        aa19.setText("Disponible");
+        jPanel26.add(aa19, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 160, -1, -1));
 
         jButton45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/a.jpg"))); // NOI18N
+        jButton45.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton45ActionPerformed(evt);
+            }
+        });
         jPanel26.add(jButton45, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 120, 50, 40));
 
-        jLabel125.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel125.setText("A019");
-        jPanel26.add(jLabel125, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 100, -1, -1));
+        a19.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        a19.setText("A019");
+        jPanel26.add(a19, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 100, -1, -1));
 
-        jLabel126.setBackground(new java.awt.Color(0, 114, 0));
-        jLabel126.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel126.setForeground(new java.awt.Color(0, 114, 0));
-        jLabel126.setText("Disponible");
-        jPanel26.add(jLabel126, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, -1, -1));
+        aa18.setBackground(new java.awt.Color(0, 114, 0));
+        aa18.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        aa18.setForeground(new java.awt.Color(0, 114, 0));
+        aa18.setText("Disponible");
+        jPanel26.add(aa18, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, -1, -1));
 
         jButton46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/a.jpg"))); // NOI18N
+        jButton46.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton46ActionPerformed(evt);
+            }
+        });
         jPanel26.add(jButton46, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 30, 50, 40));
 
-        jLabel127.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel127.setText("A018");
-        jPanel26.add(jLabel127, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 10, -1, -1));
+        a18.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        a18.setText("A018");
+        jPanel26.add(a18, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 10, -1, -1));
 
         jButton47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/a.jpg"))); // NOI18N
+        jButton47.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton47ActionPerformed(evt);
+            }
+        });
         jPanel26.add(jButton47, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 30, 50, 40));
 
-        jLabel128.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel128.setText("A020");
-        jPanel26.add(jLabel128, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 10, -1, -1));
+        a20.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        a20.setText("A020");
+        jPanel26.add(a20, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 10, -1, -1));
 
-        jLabel129.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel129.setText("A021");
-        jPanel26.add(jLabel129, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 100, -1, -1));
+        a21.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        a21.setText("A021");
+        jPanel26.add(a21, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 100, -1, -1));
 
         jButton48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/a.jpg"))); // NOI18N
+        jButton48.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton48ActionPerformed(evt);
+            }
+        });
         jPanel26.add(jButton48, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 120, 50, 40));
 
-        jLabel130.setBackground(new java.awt.Color(0, 114, 0));
-        jLabel130.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel130.setForeground(new java.awt.Color(0, 114, 0));
-        jLabel130.setText("Disponible");
-        jPanel26.add(jLabel130, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 70, -1, -1));
+        aa20.setBackground(new java.awt.Color(0, 114, 0));
+        aa20.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        aa20.setForeground(new java.awt.Color(0, 114, 0));
+        aa20.setText("Disponible");
+        jPanel26.add(aa20, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 70, -1, -1));
 
-        jLabel131.setBackground(new java.awt.Color(0, 114, 0));
-        jLabel131.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel131.setForeground(new java.awt.Color(0, 114, 0));
-        jLabel131.setText("Disponible");
-        jPanel26.add(jLabel131, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 160, -1, -1));
+        aa21.setBackground(new java.awt.Color(0, 114, 0));
+        aa21.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        aa21.setForeground(new java.awt.Color(0, 114, 0));
+        aa21.setText("Disponible");
+        jPanel26.add(aa21, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 160, -1, -1));
 
-        jLabel132.setBackground(new java.awt.Color(0, 114, 0));
-        jLabel132.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel132.setForeground(new java.awt.Color(0, 114, 0));
-        jLabel132.setText("Disponible");
-        jPanel26.add(jLabel132, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 160, -1, -1));
+        aa23.setBackground(new java.awt.Color(0, 114, 0));
+        aa23.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        aa23.setForeground(new java.awt.Color(0, 114, 0));
+        aa23.setText("Disponible");
+        jPanel26.add(aa23, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 160, -1, -1));
 
         jButton49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/a.jpg"))); // NOI18N
+        jButton49.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton49ActionPerformed(evt);
+            }
+        });
         jPanel26.add(jButton49, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 120, 50, 40));
 
-        jLabel133.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel133.setText("A023");
-        jPanel26.add(jLabel133, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 100, -1, -1));
+        a23.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        a23.setText("A023");
+        jPanel26.add(a23, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 100, -1, -1));
 
-        jLabel134.setBackground(new java.awt.Color(0, 114, 0));
-        jLabel134.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel134.setForeground(new java.awt.Color(0, 114, 0));
-        jLabel134.setText("Disponible");
-        jPanel26.add(jLabel134, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 70, -1, -1));
+        aa22.setBackground(new java.awt.Color(0, 114, 0));
+        aa22.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        aa22.setForeground(new java.awt.Color(0, 114, 0));
+        aa22.setText("Disponible");
+        jPanel26.add(aa22, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 70, -1, -1));
 
         jButton50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/a.jpg"))); // NOI18N
+        jButton50.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton50ActionPerformed(evt);
+            }
+        });
         jPanel26.add(jButton50, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 30, 50, 40));
 
-        jLabel135.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel135.setText("A022");
-        jPanel26.add(jLabel135, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 10, -1, -1));
+        a22.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        a22.setText("A022");
+        jPanel26.add(a22, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 10, -1, -1));
 
-        jLabel136.setBackground(new java.awt.Color(0, 114, 0));
-        jLabel136.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel136.setForeground(new java.awt.Color(0, 114, 0));
-        jLabel136.setText("Disponible");
-        jPanel26.add(jLabel136, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, -1, -1));
+        aa12.setBackground(new java.awt.Color(0, 114, 0));
+        aa12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        aa12.setForeground(new java.awt.Color(0, 114, 0));
+        aa12.setText("Disponible");
+        jPanel26.add(aa12, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, -1, -1));
 
-        jLabel137.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel137.setText("A014");
-        jPanel26.add(jLabel137, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 10, -1, -1));
+        a14.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        a14.setText("A014");
+        jPanel26.add(a14, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 10, -1, -1));
 
         javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
         jPanel22.setLayout(jPanel22Layout);
@@ -1109,12 +1176,13 @@ public class PanelLugares extends javax.swing.JPanel {
                 .addContainerGap())
             .addGroup(jPanel23Layout.createSequentialGroup()
                 .addGap(39, 39, 39)
-                .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtNuBus, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel49, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(cboDestinoBus, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txtNuBus, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel49, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1176,7 +1244,7 @@ public class PanelLugares extends javax.swing.JPanel {
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel7.setText("DNI");
         jPanel17.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 260, 130, 30));
-        jPanel17.add(txtApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 250, 30));
+        jPanel17.add(txtApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, 320, 30));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel8.setText("Apellido");
@@ -1186,12 +1254,12 @@ public class PanelLugares extends javax.swing.JPanel {
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel9.setText("Teléfono");
         jPanel17.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, 130, 30));
-        jPanel17.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 300, 250, 30));
+        jPanel17.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, 320, 30));
 
         jLabel24.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel24.setText("E-mail");
         jPanel17.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, 130, 30));
-        jPanel17.add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 340, 250, 30));
+        jPanel17.add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 340, 320, 30));
 
         cboDestino.setModel(new javax.swing.DefaultComboBoxModel(new String[] { ".....", "Amazonas", "Trujillo", "Lima", "Ica", "Puno", "Cuzco", "Arequipa", "Ayacucho" }));
         cboDestino.addActionListener(new java.awt.event.ActionListener() {
@@ -1199,14 +1267,11 @@ public class PanelLugares extends javax.swing.JPanel {
                 cboDestinoActionPerformed(evt);
             }
         });
-        jPanel17.add(cboDestino, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 380, 250, 30));
+        jPanel17.add(cboDestino, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 380, 320, 30));
 
         jLabel26.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel26.setText("Destinos");
         jPanel17.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, 130, 30));
-
-        Pasaje.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jPanel17.add(Pasaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 450, 10, 10));
 
         jLabel27.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel27.setText("Precio del Destino");
@@ -1217,28 +1282,19 @@ public class PanelLugares extends javax.swing.JPanel {
 
         btnNacional.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnNacional.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Icono Docentes.png"))); // NOI18N
-        btnNacional.setText("Nacional");
+        btnNacional.setText("Registrar");
         btnNacional.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnNacional.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNacionalActionPerformed(evt);
             }
         });
-        jPanel17.add(btnNacional, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 520, 150, 50));
+        jPanel17.add(btnNacional, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 520, 390, 50));
 
         jLabel30.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel30.setText("Nombre");
         jPanel17.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 130, 30));
-        jPanel17.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 180, 250, 30));
-
-        btnUniversitario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Icono Estudiantes.png"))); // NOI18N
-        btnUniversitario.setText("Universitario");
-        btnUniversitario.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUniversitarioActionPerformed(evt);
-            }
-        });
-        jPanel17.add(btnUniversitario, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 520, 160, 50));
+        jPanel17.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 320, 30));
         jPanel17.add(txtNumCarnet, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 60, 190, 40));
         jPanel17.add(txtDondeVive, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 190, 40));
 
@@ -1292,22 +1348,13 @@ public class PanelLugares extends javax.swing.JPanel {
         jLabel41.setText("Nro. de carnet de extranjero");
         jPanel17.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 200, -1));
 
-        btnExtranjero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Icono Extranjero.png"))); // NOI18N
-        btnExtranjero.setText("Extranjero");
-        btnExtranjero.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnExtranjeroActionPerformed(evt);
-            }
-        });
-        jPanel17.add(btnExtranjero, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 520, 160, 50));
-
         busN1.setEditable(false);
         jPanel17.add(busN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 420, 120, 30));
 
         jLabel46.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel46.setText("asiento");
         jPanel17.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 420, 60, 30));
-        jPanel17.add(txtEdad1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 260, 90, 30));
+        jPanel17.add(txtEdad1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 260, 70, 30));
 
         jLabel50.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel50.setText("N° Bus:");
@@ -1354,138 +1401,6 @@ public class PanelLugares extends javax.swing.JPanel {
         jPanel10.add(jPanel18, java.awt.BorderLayout.CENTER);
 
         panel1.addTab("Reservas", jPanel10);
-
-        jPanel9.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel9.setLayout(new java.awt.BorderLayout());
-
-        jPanel15.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel15.setMaximumSize(new java.awt.Dimension(422, 528));
-        jPanel15.setMinimumSize(new java.awt.Dimension(422, 528));
-        jPanel15.setPreferredSize(new java.awt.Dimension(422, 528));
-        jPanel15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel11.setText("Nuevo Destino");
-        jPanel15.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 120, 30));
-        jPanel15.add(txtNuevoDestino, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 60, 240, 30));
-
-        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel12.setText("Precio");
-        jPanel15.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 120, 30));
-        jPanel15.add(txtNuevoPrecio, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 240, 30));
-
-        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel13.setText("Ubicación");
-        jPanel15.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 120, 30));
-        jPanel15.add(txtUbicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 360, 30));
-
-        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel14.setText("Superficie");
-        jPanel15.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 120, 30));
-        jPanel15.add(txtSuperficie, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 360, 30));
-
-        jLabel15.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel15.setText("Relieve");
-        jPanel15.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 120, 30));
-        jPanel15.add(txtRelieve, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 360, 30));
-
-        jLabel16.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel16.setText("Capital");
-        jPanel15.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 120, 30));
-        jPanel15.add(txtCapital, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 450, 360, 30));
-
-        jLabel17.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel17.setText("Fundacion");
-        jPanel15.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 490, 120, 30));
-        jPanel15.add(txtFundacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, 360, 30));
-
-        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo.png"))); // NOI18N
-        jPanel15.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, -1, -1));
-
-        jPanel9.add(jPanel15, java.awt.BorderLayout.LINE_START);
-
-        jPanel16.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel16.setMaximumSize(new java.awt.Dimension(421, 528));
-        jPanel16.setMinimumSize(new java.awt.Dimension(421, 528));
-        jPanel16.setPreferredSize(new java.awt.Dimension(421, 528));
-        jPanel16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel18.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel18.setText("Clima");
-        jPanel16.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, 120, 30));
-
-        jLabel19.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel19.setText("Fauna");
-        jPanel16.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 120, 30));
-        jPanel16.add(txtFauna, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, 360, 30));
-        jPanel16.add(txtClima, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 360, 30));
-
-        jLabel20.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel20.setText("Flora");
-        jPanel16.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, 120, 30));
-
-        txtnuevoImagen.setEditable(false);
-        txtnuevoImagen.setBorder(javax.swing.BorderFactory.createBevelBorder(0));
-        txtnuevoImagen.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtnuevoImagenActionPerformed(evt);
-            }
-        });
-        jPanel16.add(txtnuevoImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 530, 360, 30));
-        jPanel16.add(txtFlora, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, 360, 30));
-
-        jLabel23.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel23.setText("Festividades");
-        jPanel16.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 410, 120, 30));
-        jPanel16.add(txtFestividad, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 450, 360, 30));
-
-        btnAgregarDestino.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        btnAgregarDestino.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Icono Guardar.png"))); // NOI18N
-        btnAgregarDestino.setText("Agregar");
-        btnAgregarDestino.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnAgregarDestino.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAgregarDestinoActionPerformed(evt);
-            }
-        });
-        jPanel16.add(btnAgregarDestino, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 150, 30));
-        jPanel16.add(txtElimDestino, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 110, 220, 50));
-
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Icono Eliminar.png"))); // NOI18N
-        jButton3.setText("Eliminar");
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        jPanel16.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 150, 30));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Icono mantenimiento.jpg"))); // NOI18N
-        jPanel16.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 0, -1, -1));
-
-        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo.png"))); // NOI18N
-        jPanel16.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(-250, 20, -1, -1));
-
-        jButton6.setText("Seleccione imagen");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
-        jPanel16.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 490, -1, -1));
-
-        jLabel43.setText("Destino");
-        jPanel16.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 90, 60, 20));
-
-        jLabel44.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel44.setText("Ubicacion de la Imagen");
-        jPanel16.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 510, -1, -1));
-
-        jPanel9.add(jPanel16, java.awt.BorderLayout.CENTER);
-
-        panel1.addTab("Mantenimiento", jPanel9);
 
         jPanel8.setBackground(new java.awt.Color(255, 255, 255));
         jPanel8.setLayout(new java.awt.BorderLayout());
@@ -1551,63 +1466,63 @@ public class PanelLugares extends javax.swing.JPanel {
 
         jTabla.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null}
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "Nombre", "Apellidos", "Edad", "DNI", "Telefono", "E-mail", "Destino", "Cantidad Reservas", "Tipo", "Total a pagar"
+                "Nombre", "Apellidos", "Edad", "DNI", "Telefono", "E-mail", "Destino", "Tipo", "Total a pagar"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false, false, false, true
+                false, false, false, false, false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -1695,13 +1610,27 @@ public class PanelLugares extends javax.swing.JPanel {
         // TODO add your handling code here:
         if (cboDestino.getSelectedIndex() == 0) {
             alerta("Por favor llene los espacios en blanco.");
-        } else {
-            PersonasTuristicas a = new PersonaTuristaNacional(leeNombre(), leeApellido(), leeDNI(), leeEmail(), leeTelefono(), leeCantReservas(), leeEdad(), leeDestino(), leeDestOrigen());
+        } else if(optNacional.isSelected()){
+          PersonasTuristicas a = new PersonaTuristaNacional(leeNombre(), leeApellido(), leeDNI(), leeEmail(), leeTelefono(), leeEdad(), leeDestino(), leeDestOrigen());
             al.agrega(a);
             al.graba();
             lista(a);
-            mensaje("Reservado exitosamente!!!");
+            mensaje("Reservado exitosamente!!!");  
+        } else if(optExtra.isSelected()){
+          PersonasTuristicas a = new PersonaTuristaExtranjero(leeNombre(), leeApellido(), leeDNI(), leeEmail(), leeTelefono(), leeEdad(), leeDestino(), leeDestOrigen());
+            al.agrega(a);
+            al.graba();
+            lista(a);
+            mensaje("Reservado exitosamente!!!");  
+        } else if(optUniv.isSelected()){
+          PersonasTuristicas a = new PersonaTuristaUniversitario(leeNombre(), leeApellido(), leeDNI(), leeEmail(), leeTelefono(), leeEdad(), leeDestino(), leeDestOrigen());
+            al.agrega(a);
+            al.graba();
+            lista(a);
+            mensaje("Reservado exitosamente!!!");  
         }
+        
+        
     }//GEN-LAST:event_btnNacionalActionPerformed
 
 
@@ -1717,64 +1646,17 @@ public class PanelLugares extends javax.swing.JPanel {
         txtDNI.setEnabled(false);
         txtCorreo.setEnabled(false);
         txtTelefono.setEnabled(false);
-        Pasaje.setValue(0);
         cboDestino.setSelectedIndex(0);
         txtPrecio.setEnabled(false);
         //Botones
         btnNacional.setEnabled(false);
-        btnUniversitario.setEnabled(false);
-        btnExtranjero.setEnabled(false);
         cboDestino.setEnabled(false);
-        Pasaje.setEnabled(false);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void cboDestinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboDestinoActionPerformed
         // TODO add your handling code here:
         mostrarCosto();
     }//GEN-LAST:event_cboDestinoActionPerformed
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-
-        JFileChooser archivo = new JFileChooser();
-
-        File ruta = new File("G:\\Sistema de Agencia de Viajes\\Sistema de Agencia de Viajes\\src\\ImagenesDestinos");
-        archivo.setCurrentDirectory(ruta);
-        int ventana = archivo.showOpenDialog(null);
-        if (ventana == JFileChooser.APPROVE_OPTION) {
-
-            File file = archivo.getSelectedFile();
-            txtnuevoImagen.setText(String.valueOf(file));
-            Image foto = getToolkit().getImage(txtnuevoImagen.getText());
-            foto = foto.getScaledInstance(110, 110, Image.SCALE_DEFAULT);
-            //  txtFoto1.setIcon(new ImageIcon(foto));
-
-        }
-    }//GEN-LAST:event_jButton6ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        //        int i=al.busca (leeDestinoElim());
-        //        if(i!=0){
-        //            al.elimina(i);
-        //            al.grabaNuevoLugar();
-        //            mensaje("se elimino correctamente");
-        //        }
-        //
-        //        else{
-        //            mensaje("error");
-        //        }
-        EliminarDestino();
-        mensaje("Destino eliminado.");
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void btnAgregarDestinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarDestinoActionPerformed
-        // TODO add your handling code here:
-        NuevosLugaresAgregados nuevo = new NuevosLugaresAgregados(leeNewDestino(), leeNewUbica(), leeNewSuperf(), leeNewRelieve(), leeNewCapital(), leeNewFunda(), leeNewClima(), leeNewFauna(), leeNewFlora(), leeNewFestividad(), leeNewPrecio(), leeNombre(), leeApellido(), leeDNI(), selecioneDestino());
-        aD.agrega(nuevo);
-        aD.grabaNuevoLugar();
-        AgregarDestino();
-        mensaje("DESTINO AGREGADO EXITOSAMENTE.");
-    }//GEN-LAST:event_btnAgregarDestinoActionPerformed
 
     private void txtMenoresEdadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMenoresEdadActionPerformed
         // TODO add your handling code here:
@@ -1861,15 +1743,8 @@ public class PanelLugares extends javax.swing.JPanel {
         if (costo == 8) {
             txtPrecio2.setText("S/.100.00");
         }
-        if (costo == 9) {
-            String nprecio = txtNuevoPrecio.getText();
-            txtPrecio2.setText(" S/. " + nprecio);
-        }
-    }//GEN-LAST:event_cboDestino2ActionPerformed
 
-    private void txtnuevoImagenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnuevoImagenActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtnuevoImagenActionPerformed
+    }//GEN-LAST:event_cboDestino2ActionPerformed
 
     private void cboBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboBuscarActionPerformed
         // TODO add your handling code here:
@@ -1892,17 +1767,15 @@ public class PanelLugares extends javax.swing.JPanel {
         txtApellido.setEnabled(true);
         asi.setEnabled(true);
         txtDNI.setEnabled(true);
+        txtEdad1.setEnabled(true);
+        busN1.setEnabled(true);
         txtCorreo.setEnabled(true);
         txtTelefono.setEnabled(true);
-        Pasaje.setValue(0);
         cboDestino.setSelectedIndex(0);
         txtPrecio.setEnabled(true);
         //Botones
-        btnNacional.setEnabled(false);
-        btnUniversitario.setEnabled(true);
-        btnExtranjero.setEnabled(false);
+        btnNacional.setEnabled(true);
         cboDestino.setEnabled(true);
-        Pasaje.setEnabled(true);
     }//GEN-LAST:event_optUnivActionPerformed
 
     private void optNacionalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_optNacionalActionPerformed
@@ -1914,17 +1787,15 @@ public class PanelLugares extends javax.swing.JPanel {
         txtApellido.setEnabled(true);
         asi.setEnabled(true);
         txtDNI.setEnabled(true);
+        txtEdad1.setEnabled(true);
+        busN1.setEnabled(true);
         txtCorreo.setEnabled(true);
         txtTelefono.setEnabled(true);
-        Pasaje.setValue(0);
         cboDestino.setSelectedIndex(0);
         txtPrecio.setEnabled(true);
         //Botones
         btnNacional.setEnabled(true);
-        btnUniversitario.setEnabled(false);
-        btnExtranjero.setEnabled(false);
         cboDestino.setEnabled(true);
-        Pasaje.setEnabled(true);
     }//GEN-LAST:event_optNacionalActionPerformed
 
     private void optExtraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_optExtraActionPerformed
@@ -1936,43 +1807,17 @@ public class PanelLugares extends javax.swing.JPanel {
         txtApellido.setEnabled(true);
         asi.setEnabled(true);
         txtDNI.setEnabled(true);
+        txtEdad1.setEnabled(true);
+        busN1.setEnabled(true);
         txtCorreo.setEnabled(true);
         txtTelefono.setEnabled(true);
-        Pasaje.setValue(0);
         cboDestino.setSelectedIndex(0);
         txtPrecio.setEnabled(true);
         //Botones
-        btnNacional.setEnabled(false);
-        btnUniversitario.setEnabled(false);
-        btnExtranjero.setEnabled(true);
+        btnNacional.setEnabled(true);
         cboDestino.setEnabled(true);
-        Pasaje.setEnabled(true);
     }//GEN-LAST:event_optExtraActionPerformed
 
-
-    private void btnUniversitarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUniversitarioActionPerformed
-        if (cboDestino.getSelectedIndex() == 0) {
-            alerta("Por favor llene los espacios en blanco.");
-        } else {
-            PersonasTuristicas b = new PersonaTuristaUniversitario(leeNombre(), leeApellido(), leeDNI(), leeEmail(), leeTelefono(), leeCantReservas(), leeEdad(), leeDestino(), leeNumCarnet());
-            al.agrega(b);
-            al.graba();
-            lista(b);
-            mensaje("Reservado exitosamente!!!");
-        }
-    }//GEN-LAST:event_btnUniversitarioActionPerformed
-
-    private void btnExtranjeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExtranjeroActionPerformed
-        if (cboDestino.getSelectedIndex() == 0) {
-            alerta("Por favor llene los espacios en blanco.");
-        } else {
-            PersonasTuristicas c = new PersonaTuristaExtranjero(leeNombre(), leeApellido(), leeDNI(), leeEmail(), leeTelefono(), leeCantReservas(), leeEdad(), leeDestino(), leeNumCarnetExtranjero());
-            al.agrega(c);
-            al.graba();
-            lista(c);
-            mensaje("Reservado exitosamente!!!");
-        }
-    }//GEN-LAST:event_btnExtranjeroActionPerformed
 
     private void txtBuscaPorTipoViajeroKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtBuscaPorTipoViajeroKeyTyped
         // TODO add your handling code here:
@@ -1993,28 +1838,317 @@ public class PanelLugares extends javax.swing.JPanel {
     }//GEN-LAST:event_cboDestinoBusActionPerformed
 String bus,asiento;
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-     ll1.setForeground(new Color(254,000,000)); 
+     
      bus = txtNuBus.getText();
+     if(bus.equals("")){
+     JOptionPane.showMessageDialog(this, "NO ESCRIBIO EL BUS");
+     }else{
+     ll1.setForeground(new Color(254,000,000));
      asiento = l1.getText();
      panel1.setSelectedIndex(3);
      asi.setText(asiento);
      busN1.setText(bus);
+     }
+     
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseClicked
      
     }//GEN-LAST:event_jButton7MouseClicked
 
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+   
+     bus = txtNuBus.getText();
+     if(bus.equals("")){
+     JOptionPane.showMessageDialog(this, "NO ESCRIBIO EL BUS");
+     }else{
+     ll2.setForeground(new Color(254,000,000));
+     asiento = l2.getText();
+     panel1.setSelectedIndex(3);
+     asi.setText(asiento);
+     busN1.setText(bus);
+     }
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+     bus = txtNuBus.getText();
+     if(bus.equals("")){
+     JOptionPane.showMessageDialog(this, "NO ESCRIBIO EL BUS");
+     }else{
+     ll3.setForeground(new Color(254,000,000));
+     asiento = l3.getText();
+     panel1.setSelectedIndex(3);
+     asi.setText(asiento);
+     busN1.setText(bus);
+     }
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+   bus = txtNuBus.getText();
+     if(bus.equals("")){
+     JOptionPane.showMessageDialog(this, "NO ESCRIBIO EL BUS");
+     }else{
+     ll4.setForeground(new Color(254,000,000));
+     asiento = l4.getText();
+     panel1.setSelectedIndex(3);
+     asi.setText(asiento);
+     busN1.setText(bus);
+     }
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+     bus = txtNuBus.getText();
+     if(bus.equals("")){
+     JOptionPane.showMessageDialog(this, "NO ESCRIBIO EL BUS");
+     }else{
+     ll5.setForeground(new Color(254,000,000));
+     asiento = l5.getText();
+     panel1.setSelectedIndex(3);
+     asi.setText(asiento);
+     busN1.setText(bus);
+     }
+    }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+     bus = txtNuBus.getText();
+     if(bus.equals("")){
+     JOptionPane.showMessageDialog(this, "NO ESCRIBIO EL BUS");
+     }else{
+     ll6.setForeground(new Color(254,000,000));
+     asiento = l6.getText();
+     panel1.setSelectedIndex(3);
+     asi.setText(asiento);
+     busN1.setText(bus);
+     }
+    }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+    bus = txtNuBus.getText();
+     if(bus.equals("")){
+     JOptionPane.showMessageDialog(this, "NO ESCRIBIO EL BUS");
+     }else{
+     ll7.setForeground(new Color(254,000,000));
+     asiento = l7.getText();
+     panel1.setSelectedIndex(3);
+     asi.setText(asiento);
+     busN1.setText(bus);
+     }
+    }//GEN-LAST:event_jButton18ActionPerformed
+
+    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+     bus = txtNuBus.getText();
+     if(bus.equals("")){
+     JOptionPane.showMessageDialog(this, "NO ESCRIBIO EL BUS");
+     }else{
+     ll8.setForeground(new Color(254,000,000));
+     asiento = l8.getText();
+     panel1.setSelectedIndex(3);
+     asi.setText(asiento);
+     busN1.setText(bus);
+     }
+    }//GEN-LAST:event_jButton20ActionPerformed
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+   bus = txtNuBus.getText();
+     if(bus.equals("")){
+     JOptionPane.showMessageDialog(this, "NO ESCRIBIO EL BUS");
+     }else{
+     ll9.setForeground(new Color(254,000,000));
+     asiento = l9.getText();
+     panel1.setSelectedIndex(3);
+     asi.setText(asiento);
+     busN1.setText(bus);
+     }
+    }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
+    bus = txtNuBus.getText();
+     if(bus.equals("")){
+     JOptionPane.showMessageDialog(this, "NO ESCRIBIO EL BUS");
+     }else{
+     aa10.setForeground(new Color(254,000,000));
+     asiento = A10.getText();
+     panel1.setSelectedIndex(3);
+     asi.setText(asiento);
+     busN1.setText(bus);
+     }
+    }//GEN-LAST:event_jButton37ActionPerformed
+
+    private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
+     bus = txtNuBus.getText();
+     if(bus.equals("")){
+     JOptionPane.showMessageDialog(this, "NO ESCRIBIO EL BUS");
+     }else{
+     aa11.setForeground(new Color(254,000,000));
+     asiento = a11.getText();
+     panel1.setSelectedIndex(3);
+     asi.setText(asiento);
+     busN1.setText(bus);
+     }
+    }//GEN-LAST:event_jButton38ActionPerformed
+
+    private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
+     bus = txtNuBus.getText();
+     if(bus.equals("")){
+     JOptionPane.showMessageDialog(this, "NO ESCRIBIO EL BUS");
+     }else{
+     aa12.setForeground(new Color(254,000,000));
+     asiento = a12.getText();
+     panel1.setSelectedIndex(3);
+     asi.setText(asiento);
+     busN1.setText(bus);
+     }
+    }//GEN-LAST:event_jButton40ActionPerformed
+
+    private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
+     bus = txtNuBus.getText();
+     if(bus.equals("")){
+     JOptionPane.showMessageDialog(this, "NO ESCRIBIO EL BUS");
+     }else{
+     aa13.setForeground(new Color(254,000,000));
+     asiento = a13.getText();
+     panel1.setSelectedIndex(3);
+     asi.setText(asiento);
+     busN1.setText(bus);
+     }
+    }//GEN-LAST:event_jButton39ActionPerformed
+
+    private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
+    bus = txtNuBus.getText();
+     if(bus.equals("")){
+     JOptionPane.showMessageDialog(this, "NO ESCRIBIO EL BUS");
+     }else{
+     aa14.setForeground(new Color(254,000,000));
+     asiento = a14.getText();
+     panel1.setSelectedIndex(3);
+     asi.setText(asiento);
+     busN1.setText(bus);
+     }
+    }//GEN-LAST:event_jButton41ActionPerformed
+
+    private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
+     bus = txtNuBus.getText();
+     if(bus.equals("")){
+     JOptionPane.showMessageDialog(this, "NO ESCRIBIO EL BUS");
+     }else{
+     aa15.setForeground(new Color(254,000,000));
+     asiento = a15.getText();
+     panel1.setSelectedIndex(3);
+     asi.setText(asiento);
+     busN1.setText(bus);
+     }
+    }//GEN-LAST:event_jButton42ActionPerformed
+
+    private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
+     bus = txtNuBus.getText();
+     if(bus.equals("")){
+     JOptionPane.showMessageDialog(this, "NO ESCRIBIO EL BUS");
+     }else{
+     aa16.setForeground(new Color(254,000,000));
+     asiento = a16.getText();
+     panel1.setSelectedIndex(3);
+     asi.setText(asiento);
+     busN1.setText(bus);
+     }
+    }//GEN-LAST:event_jButton43ActionPerformed
+
+    private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
+     bus = txtNuBus.getText();
+     if(bus.equals("")){
+     JOptionPane.showMessageDialog(this, "NO ESCRIBIO EL BUS");
+     }else{
+     aa17.setForeground(new Color(254,000,000));
+     asiento = a17.getText();
+     panel1.setSelectedIndex(3);
+     asi.setText(asiento);
+     busN1.setText(bus);
+     }
+    }//GEN-LAST:event_jButton44ActionPerformed
+
+    private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
+     bus = txtNuBus.getText();
+     if(bus.equals("")){
+     JOptionPane.showMessageDialog(this, "NO ESCRIBIO EL BUS");
+     }else{
+     aa18.setForeground(new Color(254,000,000));
+     asiento = a18.getText();
+     panel1.setSelectedIndex(3);
+     asi.setText(asiento);
+     busN1.setText(bus);
+     }
+    }//GEN-LAST:event_jButton46ActionPerformed
+
+    private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
+    bus = txtNuBus.getText();
+     if(bus.equals("")){
+     JOptionPane.showMessageDialog(this, "NO ESCRIBIO EL BUS");
+     }else{
+     aa19.setForeground(new Color(254,000,000));
+     asiento = a19.getText();
+     panel1.setSelectedIndex(3);
+     asi.setText(asiento);
+     busN1.setText(bus);
+     }
+    }//GEN-LAST:event_jButton45ActionPerformed
+
+    private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
+     bus = txtNuBus.getText();
+     if(bus.equals("")){
+     JOptionPane.showMessageDialog(this, "NO ESCRIBIO EL BUS");
+     }else{
+     aa20.setForeground(new Color(254,000,000));
+     asiento = a20.getText();
+     panel1.setSelectedIndex(3);
+     asi.setText(asiento);
+     busN1.setText(bus);
+     }
+    }//GEN-LAST:event_jButton47ActionPerformed
+
+    private void jButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton48ActionPerformed
+    bus = txtNuBus.getText();
+     if(bus.equals("")){
+     JOptionPane.showMessageDialog(this, "NO ESCRIBIO EL BUS");
+     }else{
+     aa21.setForeground(new Color(254,000,000));
+     asiento = a21.getText();
+     panel1.setSelectedIndex(3);
+     asi.setText(asiento);
+     busN1.setText(bus);
+     }
+    }//GEN-LAST:event_jButton48ActionPerformed
+
+    private void jButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton50ActionPerformed
+     bus = txtNuBus.getText();
+     if(bus.equals("")){
+     JOptionPane.showMessageDialog(this, "NO ESCRIBIO EL BUS");
+     }else{
+     aa22.setForeground(new Color(254,000,000));
+     asiento = a22.getText();
+     panel1.setSelectedIndex(3);
+     asi.setText(asiento);
+     busN1.setText(bus);
+     }
+    }//GEN-LAST:event_jButton50ActionPerformed
+
+    private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
+     bus = txtNuBus.getText();
+     if(bus.equals("")){
+     JOptionPane.showMessageDialog(this, "NO ESCRIBIO EL BUS");
+     }else{
+     aa23.setForeground(new Color(254,000,000));
+     asiento = a23.getText();
+     panel1.setSelectedIndex(3);
+     asi.setText(asiento);
+     busN1.setText(bus);
+     }
+    }//GEN-LAST:event_jButton49ActionPerformed
+
     public void buscarPorTipo() {
         int columnaBuscar = 8;
         trsFiltro.setRowFilter(RowFilter.regexFilter((String) txtBuscaPorTipoViajero.getText(), columnaBuscar));
     }
 
-    public void EliminarDestino() {
-        String desti = txtElimDestino.getText();
-        cboDestino2.removeItem(desti);
-        cboDestino.removeItem(desti);
-    }
+
 
 //    public void AgregarDestino() {
 //        String nDesti = txtNuevoDestino.getText();
@@ -2023,12 +2157,7 @@ String bus,asiento;
 //    }
     
     
-    public void AgregarDestino(){
-        String lugar = txtNuevoDestino.getText();
-        anl[0] = lugar;
-        cboDestino.addItem(anl[0]);
-        cboDestino2.addItem(anl[0]);
-    }    
+  
     
     public double cantCostoTo() {
 
@@ -2073,9 +2202,7 @@ String bus,asiento;
 //        txtMontoTotalGeneral.setText(" "+ acumulador);
 //        }
 //    }
-    public String leeDestinoElim() {
-        return txtElimDestino.getText();
-    }
+
 
     public void listaTabla() {
         for (int i = 0; i < al.tamaño(); i++) {
@@ -2087,9 +2214,8 @@ String bus,asiento;
             imprimeTabla(er.getTelefono(), i, 4);
             imprimeTabla(er.getEmail(), i, 5);
             imprimeTabla("" + er.seleccioneLugar(), i, 6);
-            imprimeTabla("" + er.getCantReservas(), i, 7);
-            imprimeTabla(er.tipoV(), i, 8);
-            imprimeTabla("" + er.totalaPagar(), i, 9);
+            imprimeTabla(er.tipoV(), i, 7);
+            imprimeTabla("" + er.totalaPagar(), i, 8);
         }
     }
 
@@ -2163,10 +2289,7 @@ String bus,asiento;
         if (costo == 8) {
             txtPrecio2.setText("S/.100.00");
         }
-        if (costo == 9) {
-            String nprecio = txtNuevoPrecio.getText();
-            txtPrecio2.setText(" S/. " + nprecio);
-        }
+
     }
 
     public void limpiarReserva() {
@@ -2176,7 +2299,6 @@ String bus,asiento;
         txtDNI.setText("");
         txtCorreo.setText("");
         txtTelefono.setText("");
-        Pasaje.setValue(0);
         cboDestino.setSelectedIndex(0);
         txtSalidaBoleta.setText("");
         txtDondeVive.requestFocus();
@@ -2232,12 +2354,7 @@ String bus,asiento;
             precioFinal = precio * cant;
             return precioFinal;
         }
-        if (destino.equalsIgnoreCase(txtNuevoDestino.getText())) {
-            precio = Double.parseDouble(txtNuevoPrecio.getText());
-            precioFinal = precio * cant;
-            return precioFinal;
 
-        }
         return precioFinal;
     }
 
@@ -2270,10 +2387,7 @@ String bus,asiento;
         if (costo == 8) {
             txtPrecio.setText("S/.100.00");
         }
-        if (costo == 9) {
-            String nprecio = txtNuevoPrecio.getText();
-            txtPrecio.setText(" S/. " + nprecio);
-        }
+
     }
 
     public int leeEdad() {
@@ -2300,9 +2414,6 @@ String bus,asiento;
         return txtCorreo.getText();
     }
 
-    public int leeCantReservas() {
-        return (Integer) Pasaje.getValue();
-    }
 
     public String leeNumCarnetExtranjero() {
         return "Extranjero";
@@ -2328,49 +2439,6 @@ String bus,asiento;
         return cboDestino.getSelectedIndex();
     }
 
-    public String leeNewUbica() {
-        return txtUbicacion.getText();
-    }
-
-    public String leeNewSuperf() {
-        return txtSuperficie.getText();
-    }
-
-    public String leeNewRelieve() {
-        return txtRelieve.getText();
-    }
-
-    public String leeNewCapital() {
-        return txtCapital.getText();
-    }
-
-    public String leeNewFunda() {
-        return txtFundacion.getText();
-    }
-
-    public String leeNewClima() {
-        return txtClima.getText();
-    }
-
-    public String leeNewFauna() {
-        return txtFauna.getText();
-    }
-
-    public String leeNewFlora() {
-        return txtFlora.getText();
-    }
-
-    public String leeNewFestividad() {
-        return txtFestividad.getText();
-    }
-
-    public double leeNewPrecio() {
-        return Integer.parseInt(txtNuevoPrecio.getText());
-    }
-
-    public String leeNewDestino() {
-        return txtNuevoDestino.getText();
-    }
 
     public void mostrarInfomacion() {
         txtSalida2.setText("");
@@ -2638,43 +2706,41 @@ String bus,asiento;
             );
 
         }
-        if (cboDestino2.getSelectedIndex() == 9) { //NUEVO
-
-///                ImageIcon imagen1 = new ImageIcon(getClass().getResource(txtnuevoImagen.getText()));
-////                ImageIcon imagen2 = new ImageIcon(getClass().getResource("/ImagenesDestinos/ayacucho2.PNG"));
-////                ImageIcon imagen3 = new ImageIcon(getClass().getResource("/ImagenesDestinos/ayacucho3.PNG"));
-////                ImageIcon imagen4 = new ImageIcon(getClass().getResource("/ImagenesDestinos/ayacucho4.PNG"));
-////                ImageIcon imagen5 = new ImageIcon(getClass().getResource("/ImagenesDestinos/ayacucho5.jpg"));
-///              Icon fondo1 = new ImageIcon(imagen1.getImage().getScaledInstance(txtFoto1.getWidth(), txtFoto1.getHeight(), Image.SCALE_DEFAULT));
-////                Icon fondo2 = new ImageIcon(imagen2.getImage().getScaledInstance(txtFoto2.getWidth(), txtFoto2.getHeight(), Image.SCALE_DEFAULT));
-////                Icon fondo3 = new ImageIcon(imagen3.getImage().getScaledInstance(txtFoto3.getWidth(), txtFoto3.getHeight(), Image.SCALE_DEFAULT));
-////                Icon fondo4 = new ImageIcon(imagen4.getImage().getScaledInstance(txtFoto4.getWidth(), txtFoto4.getHeight(), Image.SCALE_DEFAULT));
-////                Icon fondo5 = new ImageIcon(imagen5.getImage().getScaledInstance(txtFoto5.getWidth(), txtFoto5.getHeight(), Image.SCALE_DEFAULT));
-//          txtFoto1.setIcon(fondo1);
-////            txtFoto2.setIcon(fondo2);
-////            txtFoto3.setIcon(fondo3);
-////            txtFoto4.setIcon(fondo4);
-////            txtFoto5.setIcon(fondo5);
-            imprime2("\n" + "➤Ubicación:" + "\t" + "\t" + leeNewUbica() + "\n"
-                    + "➤Superficie:" + "\t" + "\t" + leeNewSuperf() + "\n"
-                    + "➤Relieve:" + "\t" + "\t" + leeNewRelieve() + "\n"
-                    + "➤Capital:" + "\t" + "\t" + leeNewCapital() + "\n"
-                    + "➤Fundacion:" + "\t" + "\t" + leeNewFunda() + "\n"
-                    + "➤Clima:" + "\t" + "\t" + leeNewClima() + "\n"
-                    + "➤Fauna:" + "\t" + "\t" + leeNewFauna() + "\n"
-                    + "➤Flora:" + "\t" + "\t" + leeNewFlora() + "\n"
-                    + "➤Festividades:" + "\n" + "\t" + "\t" + "○" + leeNewFestividad());
-        }
+       
     }
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JSpinner Pasaje;
+    private javax.swing.JLabel A10;
+    private javax.swing.JLabel a11;
+    private javax.swing.JLabel a12;
+    private javax.swing.JLabel a13;
+    private javax.swing.JLabel a14;
+    private javax.swing.JLabel a15;
+    private javax.swing.JLabel a16;
+    private javax.swing.JLabel a17;
+    private javax.swing.JLabel a18;
+    private javax.swing.JLabel a19;
+    private javax.swing.JLabel a20;
+    private javax.swing.JLabel a21;
+    private javax.swing.JLabel a22;
+    private javax.swing.JLabel a23;
+    private javax.swing.JLabel aa10;
+    private javax.swing.JLabel aa11;
+    private javax.swing.JLabel aa12;
+    private javax.swing.JLabel aa13;
+    private javax.swing.JLabel aa14;
+    private javax.swing.JLabel aa15;
+    private javax.swing.JLabel aa16;
+    private javax.swing.JLabel aa17;
+    private javax.swing.JLabel aa18;
+    private javax.swing.JLabel aa19;
+    private javax.swing.JLabel aa20;
+    private javax.swing.JLabel aa21;
+    private javax.swing.JLabel aa22;
+    private javax.swing.JLabel aa23;
     private javax.swing.JTextField asi;
-    private javax.swing.JButton btnAgregarDestino;
-    private javax.swing.JButton btnExtranjero;
     private javax.swing.JButton btnNacional;
-    private javax.swing.JButton btnUniversitario;
     private javax.swing.JTextField busN1;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JComboBox cboBuscar;
@@ -2696,7 +2762,6 @@ String bus,asiento;
     private javax.swing.JButton jButton27;
     private javax.swing.JButton jButton28;
     private javax.swing.JButton jButton29;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton30;
     private javax.swing.JButton jButton31;
     private javax.swing.JButton jButton32;
@@ -2719,7 +2784,6 @@ String bus,asiento;
     private javax.swing.JButton jButton49;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton50;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JComboBox jComboBox1;
     private javax.swing.JLabel jLabel1;
@@ -2733,48 +2797,9 @@ String bus,asiento;
     private javax.swing.JLabel jLabel107;
     private javax.swing.JLabel jLabel108;
     private javax.swing.JLabel jLabel109;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel110;
-    private javax.swing.JLabel jLabel111;
-    private javax.swing.JLabel jLabel112;
-    private javax.swing.JLabel jLabel113;
-    private javax.swing.JLabel jLabel114;
-    private javax.swing.JLabel jLabel115;
-    private javax.swing.JLabel jLabel116;
-    private javax.swing.JLabel jLabel117;
-    private javax.swing.JLabel jLabel118;
-    private javax.swing.JLabel jLabel119;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel120;
-    private javax.swing.JLabel jLabel121;
-    private javax.swing.JLabel jLabel122;
-    private javax.swing.JLabel jLabel123;
-    private javax.swing.JLabel jLabel124;
-    private javax.swing.JLabel jLabel125;
-    private javax.swing.JLabel jLabel126;
-    private javax.swing.JLabel jLabel127;
-    private javax.swing.JLabel jLabel128;
-    private javax.swing.JLabel jLabel129;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel130;
-    private javax.swing.JLabel jLabel131;
-    private javax.swing.JLabel jLabel132;
-    private javax.swing.JLabel jLabel133;
-    private javax.swing.JLabel jLabel134;
-    private javax.swing.JLabel jLabel135;
-    private javax.swing.JLabel jLabel136;
-    private javax.swing.JLabel jLabel137;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
@@ -2784,10 +2809,8 @@ String bus,asiento;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
@@ -2795,14 +2818,11 @@ String bus,asiento;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
-    private javax.swing.JLabel jLabel43;
-    private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -2829,8 +2849,6 @@ String bus,asiento;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
-    private javax.swing.JPanel jPanel15;
-    private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel18;
     private javax.swing.JPanel jPanel19;
@@ -2848,7 +2866,6 @@ String bus,asiento;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
@@ -2883,40 +2900,27 @@ String bus,asiento;
     private javax.swing.JTextField txtBuscaPorTipoViajero;
     private javax.swing.JTextField txtCantReservas;
     private javax.swing.JTextField txtCantidadPersona;
-    private javax.swing.JTextField txtCapital;
     private javax.swing.JTextField txtCarnetExtranjero;
-    private javax.swing.JTextField txtClima;
     private javax.swing.JTextField txtCorreo;
     private javax.swing.JTextField txtDNI;
     private javax.swing.JTextField txtDondeVive;
     private javax.swing.JTextField txtEdad1;
-    private javax.swing.JTextField txtElimDestino;
-    private javax.swing.JTextField txtFauna;
-    private javax.swing.JTextField txtFestividad;
-    private javax.swing.JTextField txtFlora;
     private javax.swing.JLabel txtFoto1;
     private javax.swing.JLabel txtFoto2;
     private javax.swing.JLabel txtFoto3;
     private javax.swing.JLabel txtFoto4;
     private javax.swing.JLabel txtFoto5;
-    private javax.swing.JTextField txtFundacion;
     private javax.swing.JTextField txtMayoresEdad;
     private javax.swing.JTextField txtMenoresEdad;
     private javax.swing.JTextField txtMontoTotalGeneral;
     private javax.swing.JTextField txtNombre;
     private javax.swing.JTextField txtNuBus;
-    private javax.swing.JTextField txtNuevoDestino;
-    private javax.swing.JTextField txtNuevoPrecio;
     private javax.swing.JTextField txtNumCarnet;
     private javax.swing.JTextField txtPrecio;
     private javax.swing.JTextField txtPrecio2;
-    private javax.swing.JTextField txtRelieve;
     private javax.swing.JTextArea txtSalida2;
     private javax.swing.JTextArea txtSalidaBoleta;
-    private javax.swing.JTextField txtSuperficie;
     private javax.swing.JTextField txtTelefono;
-    private javax.swing.JTextField txtUbicacion;
-    private javax.swing.JTextField txtnuevoImagen;
     // End of variables declaration//GEN-END:variables
     public void imprime(String s) {
         txtSalidaBoleta.append(s + "\n");

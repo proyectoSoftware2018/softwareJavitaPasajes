@@ -712,6 +712,9 @@
                                               <Image iconType="3" name="/Imagenes/a.jpg"/>
                                             </Property>
                                           </Properties>
+                                          <Events>
+                                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton13ActionPerformed"/>
+                                          </Events>
                                           <Constraints>
                                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                                               <AbsoluteConstraints x="550" y="30" width="50" height="40"/>
@@ -762,6 +765,9 @@
                                               <Image iconType="3" name="/Imagenes/a.jpg"/>
                                             </Property>
                                           </Properties>
+                                          <Events>
+                                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton14ActionPerformed"/>
+                                          </Events>
                                           <Constraints>
                                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                                               <AbsoluteConstraints x="660" y="30" width="50" height="40"/>
@@ -806,6 +812,9 @@
                                               <Image iconType="3" name="/Imagenes/a.jpg"/>
                                             </Property>
                                           </Properties>
+                                          <Events>
+                                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton15ActionPerformed"/>
+                                          </Events>
                                           <Constraints>
                                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                                               <AbsoluteConstraints x="440" y="260" width="50" height="40"/>
@@ -863,6 +872,9 @@
                                               <Image iconType="3" name="/Imagenes/a.jpg"/>
                                             </Property>
                                           </Properties>
+                                          <Events>
+                                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton16ActionPerformed"/>
+                                          </Events>
                                           <Constraints>
                                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                                               <AbsoluteConstraints x="440" y="160" width="50" height="40"/>
@@ -888,6 +900,9 @@
                                               <Image iconType="3" name="/Imagenes/a.jpg"/>
                                             </Property>
                                           </Properties>
+                                          <Events>
+                                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton17ActionPerformed"/>
+                                          </Events>
                                           <Constraints>
                                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                                               <AbsoluteConstraints x="560" y="160" width="50" height="40"/>
@@ -932,6 +947,9 @@
                                               <Image iconType="3" name="/Imagenes/a.jpg"/>
                                             </Property>
                                           </Properties>
+                                          <Events>
+                                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton18ActionPerformed"/>
+                                          </Events>
                                           <Constraints>
                                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                                               <AbsoluteConstraints x="560" y="260" width="50" height="40"/>
@@ -989,6 +1007,9 @@
                                               <Image iconType="3" name="/Imagenes/a.jpg"/>
                                             </Property>
                                           </Properties>
+                                          <Events>
+                                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton19ActionPerformed"/>
+                                          </Events>
                                           <Constraints>
                                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                                               <AbsoluteConstraints x="670" y="260" width="50" height="40"/>
@@ -1001,6 +1022,9 @@
                                               <Image iconType="3" name="/Imagenes/a.jpg"/>
                                             </Property>
                                           </Properties>
+                                          <Events>
+                                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton20ActionPerformed"/>
+                                          </Events>
                                           <Constraints>
                                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                                               <AbsoluteConstraints x="670" y="160" width="50" height="40"/>
@@ -1643,13 +1667,16 @@
                                               <Image iconType="3" name="/Imagenes/a.jpg"/>
                                             </Property>
                                           </Properties>
+                                          <Events>
+                                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton37ActionPerformed"/>
+                                          </Events>
                                           <Constraints>
                                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                                               <AbsoluteConstraints x="30" y="30" width="50" height="40"/>
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel110">
+                                        <Component class="javax.swing.JLabel" name="A10">
                                           <Properties>
                                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                               <Font name="Tahoma" size="12" style="1"/>
@@ -1662,7 +1689,7 @@
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel111">
+                                        <Component class="javax.swing.JLabel" name="a11">
                                           <Properties>
                                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                               <Font name="Tahoma" size="12" style="1"/>
@@ -1681,13 +1708,16 @@
                                               <Image iconType="3" name="/Imagenes/a.jpg"/>
                                             </Property>
                                           </Properties>
+                                          <Events>
+                                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton38ActionPerformed"/>
+                                          </Events>
                                           <Constraints>
                                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                                               <AbsoluteConstraints x="30" y="120" width="50" height="40"/>
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel112">
+                                        <Component class="javax.swing.JLabel" name="aa11">
                                           <Properties>
                                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                               <Color blue="0" green="72" red="0" type="rgb"/>
@@ -1706,7 +1736,7 @@
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel113">
+                                        <Component class="javax.swing.JLabel" name="aa13">
                                           <Properties>
                                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                               <Color blue="0" green="72" red="0" type="rgb"/>
@@ -1731,13 +1761,16 @@
                                               <Image iconType="3" name="/Imagenes/a.jpg"/>
                                             </Property>
                                           </Properties>
+                                          <Events>
+                                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton39ActionPerformed"/>
+                                          </Events>
                                           <Constraints>
                                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                                               <AbsoluteConstraints x="150" y="120" width="50" height="40"/>
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel114">
+                                        <Component class="javax.swing.JLabel" name="a13">
                                           <Properties>
                                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                               <Font name="Tahoma" size="12" style="1"/>
@@ -1750,7 +1783,7 @@
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel115">
+                                        <Component class="javax.swing.JLabel" name="aa10">
                                           <Properties>
                                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                               <Color blue="0" green="72" red="0" type="rgb"/>
@@ -1775,13 +1808,16 @@
                                               <Image iconType="3" name="/Imagenes/a.jpg"/>
                                             </Property>
                                           </Properties>
+                                          <Events>
+                                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton40ActionPerformed"/>
+                                          </Events>
                                           <Constraints>
                                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                                               <AbsoluteConstraints x="150" y="30" width="50" height="40"/>
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel116">
+                                        <Component class="javax.swing.JLabel" name="a12">
                                           <Properties>
                                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                               <Font name="Tahoma" size="12" style="1"/>
@@ -1794,7 +1830,7 @@
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel117">
+                                        <Component class="javax.swing.JLabel" name="a15">
                                           <Properties>
                                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                               <Font name="Tahoma" size="12" style="1"/>
@@ -1813,13 +1849,16 @@
                                               <Image iconType="3" name="/Imagenes/a.jpg"/>
                                             </Property>
                                           </Properties>
+                                          <Events>
+                                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton41ActionPerformed"/>
+                                          </Events>
                                           <Constraints>
                                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                                               <AbsoluteConstraints x="260" y="30" width="50" height="40"/>
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel118">
+                                        <Component class="javax.swing.JLabel" name="aa14">
                                           <Properties>
                                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                               <Color blue="0" green="72" red="0" type="rgb"/>
@@ -1844,13 +1883,16 @@
                                               <Image iconType="3" name="/Imagenes/a.jpg"/>
                                             </Property>
                                           </Properties>
+                                          <Events>
+                                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton42ActionPerformed"/>
+                                          </Events>
                                           <Constraints>
                                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                                               <AbsoluteConstraints x="260" y="120" width="50" height="40"/>
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel119">
+                                        <Component class="javax.swing.JLabel" name="aa15">
                                           <Properties>
                                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                               <Color blue="0" green="72" red="0" type="rgb"/>
@@ -1869,7 +1911,7 @@
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel120">
+                                        <Component class="javax.swing.JLabel" name="a16">
                                           <Properties>
                                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                               <Font name="Tahoma" size="12" style="1"/>
@@ -1888,13 +1930,16 @@
                                               <Image iconType="3" name="/Imagenes/a.jpg"/>
                                             </Property>
                                           </Properties>
+                                          <Events>
+                                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton43ActionPerformed"/>
+                                          </Events>
                                           <Constraints>
                                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                                               <AbsoluteConstraints x="360" y="30" width="50" height="40"/>
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel121">
+                                        <Component class="javax.swing.JLabel" name="aa16">
                                           <Properties>
                                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                               <Color blue="0" green="72" red="0" type="rgb"/>
@@ -1913,7 +1958,7 @@
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel122">
+                                        <Component class="javax.swing.JLabel" name="a17">
                                           <Properties>
                                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                               <Font name="Tahoma" size="12" style="1"/>
@@ -1932,13 +1977,16 @@
                                               <Image iconType="3" name="/Imagenes/a.jpg"/>
                                             </Property>
                                           </Properties>
+                                          <Events>
+                                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton44ActionPerformed"/>
+                                          </Events>
                                           <Constraints>
                                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                                               <AbsoluteConstraints x="360" y="120" width="50" height="40"/>
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel123">
+                                        <Component class="javax.swing.JLabel" name="aa17">
                                           <Properties>
                                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                               <Color blue="0" green="72" red="0" type="rgb"/>
@@ -1957,7 +2005,7 @@
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel124">
+                                        <Component class="javax.swing.JLabel" name="aa19">
                                           <Properties>
                                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                               <Color blue="0" green="72" red="0" type="rgb"/>
@@ -1982,13 +2030,16 @@
                                               <Image iconType="3" name="/Imagenes/a.jpg"/>
                                             </Property>
                                           </Properties>
+                                          <Events>
+                                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton45ActionPerformed"/>
+                                          </Events>
                                           <Constraints>
                                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                                               <AbsoluteConstraints x="460" y="120" width="50" height="40"/>
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel125">
+                                        <Component class="javax.swing.JLabel" name="a19">
                                           <Properties>
                                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                               <Font name="Tahoma" size="12" style="1"/>
@@ -2001,7 +2052,7 @@
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel126">
+                                        <Component class="javax.swing.JLabel" name="aa18">
                                           <Properties>
                                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                               <Color blue="0" green="72" red="0" type="rgb"/>
@@ -2026,13 +2077,16 @@
                                               <Image iconType="3" name="/Imagenes/a.jpg"/>
                                             </Property>
                                           </Properties>
+                                          <Events>
+                                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton46ActionPerformed"/>
+                                          </Events>
                                           <Constraints>
                                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                                               <AbsoluteConstraints x="460" y="30" width="50" height="40"/>
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel127">
+                                        <Component class="javax.swing.JLabel" name="a18">
                                           <Properties>
                                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                               <Font name="Tahoma" size="12" style="1"/>
@@ -2051,13 +2105,16 @@
                                               <Image iconType="3" name="/Imagenes/a.jpg"/>
                                             </Property>
                                           </Properties>
+                                          <Events>
+                                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton47ActionPerformed"/>
+                                          </Events>
                                           <Constraints>
                                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                                               <AbsoluteConstraints x="560" y="30" width="50" height="40"/>
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel128">
+                                        <Component class="javax.swing.JLabel" name="a20">
                                           <Properties>
                                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                               <Font name="Tahoma" size="12" style="1"/>
@@ -2070,7 +2127,7 @@
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel129">
+                                        <Component class="javax.swing.JLabel" name="a21">
                                           <Properties>
                                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                               <Font name="Tahoma" size="12" style="1"/>
@@ -2089,13 +2146,16 @@
                                               <Image iconType="3" name="/Imagenes/a.jpg"/>
                                             </Property>
                                           </Properties>
+                                          <Events>
+                                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton48ActionPerformed"/>
+                                          </Events>
                                           <Constraints>
                                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                                               <AbsoluteConstraints x="560" y="120" width="50" height="40"/>
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel130">
+                                        <Component class="javax.swing.JLabel" name="aa20">
                                           <Properties>
                                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                               <Color blue="0" green="72" red="0" type="rgb"/>
@@ -2114,7 +2174,7 @@
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel131">
+                                        <Component class="javax.swing.JLabel" name="aa21">
                                           <Properties>
                                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                               <Color blue="0" green="72" red="0" type="rgb"/>
@@ -2133,7 +2193,7 @@
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel132">
+                                        <Component class="javax.swing.JLabel" name="aa23">
                                           <Properties>
                                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                               <Color blue="0" green="72" red="0" type="rgb"/>
@@ -2158,13 +2218,16 @@
                                               <Image iconType="3" name="/Imagenes/a.jpg"/>
                                             </Property>
                                           </Properties>
+                                          <Events>
+                                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton49ActionPerformed"/>
+                                          </Events>
                                           <Constraints>
                                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                                               <AbsoluteConstraints x="670" y="120" width="50" height="40"/>
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel133">
+                                        <Component class="javax.swing.JLabel" name="a23">
                                           <Properties>
                                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                               <Font name="Tahoma" size="12" style="1"/>
@@ -2177,7 +2240,7 @@
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel134">
+                                        <Component class="javax.swing.JLabel" name="aa22">
                                           <Properties>
                                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                               <Color blue="0" green="72" red="0" type="rgb"/>
@@ -2202,13 +2265,16 @@
                                               <Image iconType="3" name="/Imagenes/a.jpg"/>
                                             </Property>
                                           </Properties>
+                                          <Events>
+                                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton50ActionPerformed"/>
+                                          </Events>
                                           <Constraints>
                                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                                               <AbsoluteConstraints x="670" y="30" width="50" height="40"/>
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel135">
+                                        <Component class="javax.swing.JLabel" name="a22">
                                           <Properties>
                                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                               <Font name="Tahoma" size="12" style="1"/>
@@ -2221,7 +2287,7 @@
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel136">
+                                        <Component class="javax.swing.JLabel" name="aa12">
                                           <Properties>
                                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                               <Color blue="0" green="72" red="0" type="rgb"/>
@@ -2240,7 +2306,7 @@
                                             </Constraint>
                                           </Constraints>
                                         </Component>
-                                        <Component class="javax.swing.JLabel" name="jLabel137">
+                                        <Component class="javax.swing.JLabel" name="a14">
                                           <Properties>
                                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                               <Font name="Tahoma" size="12" style="1"/>
@@ -2310,12 +2376,14 @@
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="txtNuBus" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                                              <Component id="jLabel49" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                                              <Group type="103" alignment="3" groupAlignment="3" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                                                   <Component id="cboDestinoBus" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
                                                   <Component id="jLabel45" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="103" groupAlignment="3" attributes="0">
+                                                  <Component id="txtNuBus" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                                                  <Component id="jLabel49" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                           <EmptySpace max="32767" attributes="0"/>
@@ -2469,7 +2537,7 @@
                             <Component class="javax.swing.JTextField" name="txtApellido">
                               <Constraints>
                                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="150" y="220" width="250" height="30"/>
+                                  <AbsoluteConstraints x="80" y="220" width="320" height="30"/>
                                 </Constraint>
                               </Constraints>
                             </Component>
@@ -2509,7 +2577,7 @@
                             <Component class="javax.swing.JTextField" name="txtTelefono">
                               <Constraints>
                                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="150" y="300" width="250" height="30"/>
+                                  <AbsoluteConstraints x="80" y="300" width="320" height="30"/>
                                 </Constraint>
                               </Constraints>
                             </Component>
@@ -2529,7 +2597,7 @@
                             <Component class="javax.swing.JTextField" name="txtCorreo">
                               <Constraints>
                                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="150" y="340" width="250" height="30"/>
+                                  <AbsoluteConstraints x="80" y="340" width="320" height="30"/>
                                 </Constraint>
                               </Constraints>
                             </Component>
@@ -2554,7 +2622,7 @@
                               </Events>
                               <Constraints>
                                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="150" y="380" width="250" height="30"/>
+                                  <AbsoluteConstraints x="80" y="380" width="320" height="30"/>
                                 </Constraint>
                               </Constraints>
                             </Component>
@@ -2568,18 +2636,6 @@
                               <Constraints>
                                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                                   <AbsoluteConstraints x="20" y="380" width="130" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JSpinner" name="Pasaje">
-                              <Properties>
-                                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                                  <Color id="Cursor Por defecto"/>
-                                </Property>
-                              </Properties>
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="420" y="450" width="10" height="10"/>
                                 </Constraint>
                               </Constraints>
                             </Component>
@@ -2614,7 +2670,7 @@
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                                   <Image iconType="3" name="/Imagenes/Icono Docentes.png"/>
                                 </Property>
-                                <Property name="text" type="java.lang.String" value="Nacional"/>
+                                <Property name="text" type="java.lang.String" value="Registrar"/>
                                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                   <Color id="Cursor de Mano"/>
                                 </Property>
@@ -2624,7 +2680,7 @@
                               </Events>
                               <Constraints>
                                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="10" y="520" width="150" height="50"/>
+                                  <AbsoluteConstraints x="10" y="520" width="390" height="50"/>
                                 </Constraint>
                               </Constraints>
                             </Component>
@@ -2644,23 +2700,7 @@
                             <Component class="javax.swing.JTextField" name="txtNombre">
                               <Constraints>
                                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="150" y="180" width="250" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JButton" name="btnUniversitario">
-                              <Properties>
-                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/Imagenes/Icono Estudiantes.png"/>
-                                </Property>
-                                <Property name="text" type="java.lang.String" value="Universitario"/>
-                              </Properties>
-                              <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnUniversitarioActionPerformed"/>
-                              </Events>
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="140" y="520" width="160" height="50"/>
+                                  <AbsoluteConstraints x="80" y="180" width="320" height="30"/>
                                 </Constraint>
                               </Constraints>
                             </Component>
@@ -2788,22 +2828,6 @@
                                 </Constraint>
                               </Constraints>
                             </Component>
-                            <Component class="javax.swing.JButton" name="btnExtranjero">
-                              <Properties>
-                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/Imagenes/Icono Extranjero.png"/>
-                                </Property>
-                                <Property name="text" type="java.lang.String" value="Extranjero"/>
-                              </Properties>
-                              <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnExtranjeroActionPerformed"/>
-                              </Events>
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="280" y="520" width="160" height="50"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
                             <Component class="javax.swing.JTextField" name="busN1">
                               <Properties>
                                 <Property name="editable" type="boolean" value="false"/>
@@ -2830,7 +2854,7 @@
                             <Component class="javax.swing.JTextField" name="txtEdad1">
                               <Constraints>
                                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="60" y="260" width="90" height="30"/>
+                                  <AbsoluteConstraints x="80" y="260" width="70" height="30"/>
                                 </Constraint>
                               </Constraints>
                             </Component>
@@ -2952,439 +2976,6 @@
                               <Constraints>
                                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                                   <AbsoluteConstraints x="20" y="520" width="390" height="50"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                          </SubComponents>
-                        </Container>
-                      </SubComponents>
-                    </Container>
-                    <Container class="javax.swing.JPanel" name="jPanel9">
-                      <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
-                      </Properties>
-                      <Constraints>
-                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                          <JTabbedPaneConstraints tabName="Mantenimiento">
-                            <Property name="tabTitle" type="java.lang.String" value="Mantenimiento"/>
-                          </JTabbedPaneConstraints>
-                        </Constraint>
-                      </Constraints>
-
-                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
-                      <SubComponents>
-                        <Container class="javax.swing.JPanel" name="jPanel15">
-                          <Properties>
-                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                            </Property>
-                            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                              <Dimension value="[422, 528]"/>
-                            </Property>
-                            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                              <Dimension value="[422, 528]"/>
-                            </Property>
-                            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                              <Dimension value="[422, 528]"/>
-                            </Property>
-                          </Properties>
-                          <Constraints>
-                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
-                              <BorderConstraints direction="Before"/>
-                            </Constraint>
-                          </Constraints>
-
-                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
-                            <Property name="useNullLayout" type="boolean" value="false"/>
-                          </Layout>
-                          <SubComponents>
-                            <Component class="javax.swing.JLabel" name="jLabel11">
-                              <Properties>
-                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                  <Font name="Tahoma" size="12" style="1"/>
-                                </Property>
-                                <Property name="text" type="java.lang.String" value="Nuevo Destino"/>
-                              </Properties>
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="20" y="60" width="120" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JTextField" name="txtNuevoDestino">
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="140" y="60" width="240" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JLabel" name="jLabel12">
-                              <Properties>
-                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                  <Font name="Tahoma" size="12" style="1"/>
-                                </Property>
-                                <Property name="text" type="java.lang.String" value="Precio"/>
-                              </Properties>
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="20" y="100" width="120" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JTextField" name="txtNuevoPrecio">
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="140" y="100" width="240" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JLabel" name="jLabel13">
-                              <Properties>
-                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                  <Font name="Tahoma" size="12" style="1"/>
-                                </Property>
-                                <Property name="text" type="java.lang.String" value="Ubicaci&#xf3;n"/>
-                              </Properties>
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="20" y="170" width="120" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JTextField" name="txtUbicacion">
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="20" y="210" width="360" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JLabel" name="jLabel14">
-                              <Properties>
-                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                  <Font name="Tahoma" size="12" style="1"/>
-                                </Property>
-                                <Property name="text" type="java.lang.String" value="Superficie"/>
-                              </Properties>
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="20" y="250" width="120" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JTextField" name="txtSuperficie">
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="20" y="290" width="360" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JLabel" name="jLabel15">
-                              <Properties>
-                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                  <Font name="Tahoma" size="12" style="1"/>
-                                </Property>
-                                <Property name="text" type="java.lang.String" value="Relieve"/>
-                              </Properties>
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="20" y="330" width="120" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JTextField" name="txtRelieve">
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="20" y="370" width="360" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JLabel" name="jLabel16">
-                              <Properties>
-                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                  <Font name="Tahoma" size="12" style="1"/>
-                                </Property>
-                                <Property name="text" type="java.lang.String" value="Capital"/>
-                              </Properties>
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="20" y="410" width="120" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JTextField" name="txtCapital">
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="20" y="450" width="360" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JLabel" name="jLabel17">
-                              <Properties>
-                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                  <Font name="Tahoma" size="12" style="1"/>
-                                </Property>
-                                <Property name="text" type="java.lang.String" value="Fundacion"/>
-                              </Properties>
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="20" y="490" width="120" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JTextField" name="txtFundacion">
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="20" y="530" width="360" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JLabel" name="jLabel33">
-                              <Properties>
-                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/Imagenes/fondo.png"/>
-                                </Property>
-                              </Properties>
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="170" y="20" width="-1" height="-1"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                          </SubComponents>
-                        </Container>
-                        <Container class="javax.swing.JPanel" name="jPanel16">
-                          <Properties>
-                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                            </Property>
-                            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                              <Dimension value="[421, 528]"/>
-                            </Property>
-                            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                              <Dimension value="[421, 528]"/>
-                            </Property>
-                            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                              <Dimension value="[421, 528]"/>
-                            </Property>
-                          </Properties>
-                          <Constraints>
-                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
-                              <BorderConstraints direction="Center"/>
-                            </Constraint>
-                          </Constraints>
-
-                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
-                            <Property name="useNullLayout" type="boolean" value="false"/>
-                          </Layout>
-                          <SubComponents>
-                            <Component class="javax.swing.JLabel" name="jLabel18">
-                              <Properties>
-                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                  <Font name="Tahoma" size="12" style="1"/>
-                                </Property>
-                                <Property name="text" type="java.lang.String" value="Clima"/>
-                              </Properties>
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="40" y="180" width="120" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JLabel" name="jLabel19">
-                              <Properties>
-                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                  <Font name="Tahoma" size="12" style="1"/>
-                                </Property>
-                                <Property name="text" type="java.lang.String" value="Fauna"/>
-                              </Properties>
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="40" y="260" width="120" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JTextField" name="txtFauna">
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="40" y="290" width="360" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JTextField" name="txtClima">
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="40" y="210" width="360" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JLabel" name="jLabel20">
-                              <Properties>
-                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                  <Font name="Tahoma" size="12" style="1"/>
-                                </Property>
-                                <Property name="text" type="java.lang.String" value="Flora"/>
-                              </Properties>
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="40" y="340" width="120" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JTextField" name="txtnuevoImagen">
-                              <Properties>
-                                <Property name="editable" type="boolean" value="false"/>
-                                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
-                                    <BevelBorder/>
-                                  </Border>
-                                </Property>
-                              </Properties>
-                              <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtnuevoImagenActionPerformed"/>
-                              </Events>
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="40" y="530" width="360" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JTextField" name="txtFlora">
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="40" y="370" width="360" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JLabel" name="jLabel23">
-                              <Properties>
-                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                  <Font name="Tahoma" size="12" style="1"/>
-                                </Property>
-                                <Property name="text" type="java.lang.String" value="Festividades"/>
-                              </Properties>
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="40" y="410" width="120" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JTextField" name="txtFestividad">
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="40" y="450" width="360" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JButton" name="btnAgregarDestino">
-                              <Properties>
-                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                  <Font name="Tahoma" size="12" style="1"/>
-                                </Property>
-                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/Imagenes/Icono Guardar.png"/>
-                                </Property>
-                                <Property name="text" type="java.lang.String" value="Agregar"/>
-                                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                                  <Color id="Cursor de Mano"/>
-                                </Property>
-                              </Properties>
-                              <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAgregarDestinoActionPerformed"/>
-                              </Events>
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="20" y="60" width="150" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JTextField" name="txtElimDestino">
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="180" y="110" width="220" height="50"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JButton" name="jButton3">
-                              <Properties>
-                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                  <Font name="Tahoma" size="12" style="1"/>
-                                </Property>
-                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/Imagenes/Icono Eliminar.png"/>
-                                </Property>
-                                <Property name="text" type="java.lang.String" value="Eliminar"/>
-                                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                                  <Color id="Cursor de Mano"/>
-                                </Property>
-                              </Properties>
-                              <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
-                              </Events>
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="20" y="130" width="150" height="30"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JLabel" name="jLabel5">
-                              <Properties>
-                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/Imagenes/Icono mantenimiento.jpg"/>
-                                </Property>
-                              </Properties>
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="360" y="0" width="-1" height="-1"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JLabel" name="jLabel36">
-                              <Properties>
-                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/Imagenes/fondo.png"/>
-                                </Property>
-                              </Properties>
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="-250" y="20" width="-1" height="-1"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JButton" name="jButton6">
-                              <Properties>
-                                <Property name="text" type="java.lang.String" value="Seleccione imagen"/>
-                              </Properties>
-                              <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton6ActionPerformed"/>
-                              </Events>
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="260" y="490" width="-1" height="-1"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JLabel" name="jLabel43">
-                              <Properties>
-                                <Property name="text" type="java.lang.String" value="Destino"/>
-                              </Properties>
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="180" y="90" width="60" height="20"/>
-                                </Constraint>
-                              </Constraints>
-                            </Component>
-                            <Component class="javax.swing.JLabel" name="jLabel44">
-                              <Properties>
-                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                  <Font name="Tahoma" size="12" style="1"/>
-                                </Property>
-                                <Property name="text" type="java.lang.String" value="Ubicacion de la Imagen"/>
-                              </Properties>
-                              <Constraints>
-                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                                  <AbsoluteConstraints x="40" y="510" width="-1" height="-1"/>
                                 </Constraint>
                               </Constraints>
                             </Component>
@@ -3570,7 +3161,7 @@
                                 <Component class="javax.swing.JTable" name="jTabla">
                                   <Properties>
                                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                                      <Table columnCount="10" rowCount="50">
+                                      <Table columnCount="9" rowCount="50">
                                         <Column editable="false" title="Nombre" type="java.lang.Object"/>
                                         <Column editable="false" title="Apellidos" type="java.lang.Object"/>
                                         <Column editable="false" title="Edad" type="java.lang.Object"/>
@@ -3578,18 +3169,12 @@
                                         <Column editable="false" title="Telefono" type="java.lang.Object"/>
                                         <Column editable="false" title="E-mail" type="java.lang.Object"/>
                                         <Column editable="false" title="Destino" type="java.lang.Object"/>
-                                        <Column editable="false" title="Cantidad Reservas" type="java.lang.Object"/>
                                         <Column editable="false" title="Tipo" type="java.lang.Object"/>
-                                        <Column editable="true" title="Total a pagar" type="java.lang.Object"/>
+                                        <Column editable="false" title="Total a pagar" type="java.lang.Object"/>
                                       </Table>
                                     </Property>
                                     <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                                       <TableColumnModel selectionModel="0">
-                                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                                          <Title/>
-                                          <Editor/>
-                                          <Renderer/>
-                                        </Column>
                                         <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                                           <Title/>
                                           <Editor/>

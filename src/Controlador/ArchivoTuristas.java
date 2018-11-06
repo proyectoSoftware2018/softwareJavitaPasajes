@@ -33,7 +33,6 @@ public class ArchivoTuristas extends ListaLugaresTuristicos {
                             + l.getDni() + "/"
                             + l.getTelefono() + "/"
                             + l.getEmail() + "/"
-                            + l.getCantReservas() + "/"
                             + l.seleccioneLugar() + "/"
                             + ((PersonaTuristaNacional) (l)).getDepNacimiento() );
                 } else if (l instanceof PersonaTuristaUniversitario) {
@@ -43,7 +42,6 @@ public class ArchivoTuristas extends ListaLugaresTuristicos {
                             + l.getDni() + "/"
                             + l.getTelefono() + "/"
                             + l.getEmail() + "/"
-                            + l.getCantReservas() + "/"
                             + l.seleccioneLugar() + "/"
                             + ((PersonaTuristaUniversitario) (l)).getNumCarnet());
                 } else if (l instanceof PersonaTuristaExtranjero ) {
@@ -53,7 +51,6 @@ public class ArchivoTuristas extends ListaLugaresTuristicos {
                             + l.getDni() + "/"
                             + l.getTelefono() + "/"
                             + l.getEmail() + "/"
-                            + l.getCantReservas() + "/"
                             + l.seleccioneLugar() + "/"
                             + ((PersonaTuristaExtranjero) (l)).getCarnetExtranjeria());
                 }              
@@ -112,7 +109,7 @@ public class ArchivoTuristas extends ListaLugaresTuristicos {
                             destino=8;
                             break;
                    }
-                   PersonasTuristicas a = new PersonaTuristaNacional(nombr, apellido, dni, email, telefono, cantReservas, edad, destino, DepNacimiento);
+                   PersonasTuristicas a = new PersonaTuristaNacional(nombr, apellido, dni, email, telefono, edad, destino, DepNacimiento);
                     
                    agrega(a);
                 } else if (tipo == 2) {
@@ -153,7 +150,7 @@ public class ArchivoTuristas extends ListaLugaresTuristicos {
                             destino=8;
                             break;
                    }
-                    PersonasTuristicas b = new PersonaTuristaUniversitario(nombr, apellido, dni, email, telefono, cantReservas, edad, destino, numCarnet);
+                    PersonasTuristicas b = new PersonaTuristaUniversitario(nombr, apellido, dni, email, telefono, edad, destino, numCarnet);
                     agrega(b);
                 } else if (tipo == 3) {
                     int destino=0;
@@ -193,7 +190,7 @@ public class ArchivoTuristas extends ListaLugaresTuristicos {
                             destino=8;
                             break;
                    }
-                    PersonasTuristicas c = new PersonaTuristaExtranjero(nombr, apellido, dni, email, telefono, cantReservas, edad, destino, carnetExtranjero);
+                    PersonasTuristicas c = new PersonaTuristaExtranjero(nombr, apellido, dni, email, telefono, edad, destino, carnetExtranjero);
                     agrega(c);
                 }
                linea = br.readLine();

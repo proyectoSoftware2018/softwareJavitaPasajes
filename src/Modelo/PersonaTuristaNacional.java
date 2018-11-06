@@ -5,8 +5,8 @@ package Modelo;
 public class PersonaTuristaNacional extends PersonasTuristicas {
     protected String depNacimiento;
 
-    public PersonaTuristaNacional( String nombre, String apellido, String dni, String email, String telefono, int cantReservas, int edad, int destino,String depNacimiento) {
-        super(nombre, apellido, dni, email, telefono, cantReservas, edad, destino);
+    public PersonaTuristaNacional( String nombre, String apellido, String dni, String email, String telefono, int edad, int destino,String depNacimiento) {
+        super(nombre, apellido, dni, email, telefono, edad, destino);
         this.depNacimiento = depNacimiento;
     }
 
@@ -29,7 +29,7 @@ public class PersonaTuristaNacional extends PersonasTuristicas {
 
    @Override
    public double totalaPagar(){
-       return costoTotal(getCantReservas(), seleccioneLugar())*0.85;
+       return costoTotal(seleccioneLugar())*0.85;
    }    
     
 }

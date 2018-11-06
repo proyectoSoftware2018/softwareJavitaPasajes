@@ -33,7 +33,6 @@ public class ArchivoPersonas extends ListaLugaresTuristicos {
                             + l.getDni() + "/"
                             + l.getTelefono() + "/"
                             + l.getEmail() + "/"
-                            + l.getCantReservas() + "/"
                             + l.seleccioneLugar() + "/"
                             + ((PersonaTuristaNacional) (l)).getDepNacimiento() + "/"
                             + ((PersonaTuristaNacional) (l)).totalaPagar());
@@ -44,7 +43,6 @@ public class ArchivoPersonas extends ListaLugaresTuristicos {
                             + l.getDni() + "/"
                             + l.getTelefono() + "/"
                             + l.getEmail() + "/"
-                            + l.getCantReservas() + "/"
                             + l.seleccioneLugar() + "/"
                             + ((PersonaTuristaUniversitario) (l)).getNumCarnet() + "/"
                             + ((PersonaTuristaUniversitario) (l)).totalaPagar());
@@ -55,7 +53,6 @@ public class ArchivoPersonas extends ListaLugaresTuristicos {
                             + l.getDni() + "/"
                             + l.getTelefono() + "/"
                             + l.getEmail() + "/"
-                            + l.getCantReservas() + "/"
                             + l.seleccioneLugar() + "/"
                             + ((PersonaTuristaExtranjero) (l)).getCarnetExtranjeria() + "/"
                             + ((PersonaTuristaExtranjero) (l)).totalaPagar());
@@ -88,13 +85,8 @@ public class ArchivoPersonas extends ListaLugaresTuristicos {
                         int cantReservas = Integer.parseInt(st.nextToken());
                         int destino = Integer.parseInt(st.nextToken());
                         String DepNacimiento = st.nextToken();
-                         
-                        
-                        
-                        
-                        
-                        
-                        PersonasTuristicas a = new PersonaTuristaNacional(nombr, apellido, dni, email, telefono, cantReservas, edad, destino, DepNacimiento);
+                       
+                        PersonasTuristicas a = new PersonaTuristaNacional(nombr, apellido, dni, email, telefono, edad, destino, DepNacimiento);
                         agrega(a);
                         break;
                     }
@@ -108,7 +100,7 @@ public class ArchivoPersonas extends ListaLugaresTuristicos {
                         int cantReservas = Integer.parseInt(st.nextToken());
                         int destino = Integer.parseInt(st.nextToken());
                         String numCarnet = st.nextToken();
-                        PersonasTuristicas b = new PersonaTuristaUniversitario(nombr, apellido, dni, email, telefono, cantReservas, edad, destino, numCarnet);
+                        PersonasTuristicas b = new PersonaTuristaUniversitario(nombr, apellido, dni, email, telefono, edad, destino, numCarnet);
                         agrega(b);
                         break;
                     }
@@ -122,7 +114,7 @@ public class ArchivoPersonas extends ListaLugaresTuristicos {
                         int cantReservas = Integer.parseInt(st.nextToken());
                         int destino = Integer.parseInt(st.nextToken());
                         String DepNacimiento = st.nextToken();
-                        PersonasTuristicas c = new PersonaTuristaExtranjero(nombr, apellido, dni, email, telefono, cantReservas, edad, destino, DepNacimiento);
+                        PersonasTuristicas c = new PersonaTuristaExtranjero(nombr, apellido, dni, email, telefono, edad, destino, DepNacimiento);
                         agrega(c);
                         break;
                     }
