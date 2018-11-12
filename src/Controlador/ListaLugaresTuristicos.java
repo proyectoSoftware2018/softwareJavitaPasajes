@@ -51,9 +51,7 @@ public class ListaLugaresTuristicos  {
         lth.remove(i);
     }
 
-    public String getApellido() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+
    
     public int cantPersonas(){
         int cant = 0;

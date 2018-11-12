@@ -2,20 +2,38 @@ package Modelo;
 
 public abstract class PersonasTuristicas {
 
-    protected String nombre, apellido, dni, email, telefono;
+    protected String nombre, apellido, dni, email, telefono,bus,asiento;
     protected int edad, destino;
 
-    public PersonasTuristicas(String nombre, String apellido, String dni, String email, String telefono, int edad, int destino) {
+    public PersonasTuristicas(String nombre, String apellido, String dni, String email, String telefono, int edad, int destino,String bus, String asiento) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
         this.email = email;
         this.telefono = telefono;
-    
+        this.bus = bus;
+        this.asiento = asiento;
         this.edad = edad;
         this.destino = destino;
     }
 
+    public String getBus() {
+        return bus;
+    }
+
+    public void setBus(String bus) {
+        this.bus = bus;
+    }
+
+    public String getAsiento() {
+        return asiento;
+    }
+
+    public void setAsiento(String asiento) {
+        this.asiento = asiento;
+    }
+    
+    
     public String getNombre() {
         return nombre;
     }

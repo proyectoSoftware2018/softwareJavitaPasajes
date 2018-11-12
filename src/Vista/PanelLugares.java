@@ -19,11 +19,7 @@ import javax.swing.table.TableRowSorter;
 import Modelo.PersonaTuristaExtranjero;
 import Modelo.PersonaTuristaNacional;
 import Modelo.PersonaTuristaUniversitario;
-import com.sun.xml.internal.bind.v2.schemagen.Util;
 import java.awt.Color;
-import static java.awt.Frame.MAXIMIZED_BOTH;
-import java.io.File;
-import javax.swing.JFileChooser;
 
 public class PanelLugares extends javax.swing.JPanel {
 
@@ -214,7 +210,7 @@ public class PanelLugares extends javax.swing.JPanel {
         a14 = new javax.swing.JLabel();
         jPanel23 = new javax.swing.JPanel();
         jLabel45 = new javax.swing.JLabel();
-        cboDestinoBus = new javax.swing.JComboBox();
+        des = new javax.swing.JComboBox();
         jLabel4 = new javax.swing.JLabel();
         jLabel47 = new javax.swing.JLabel();
         jLabel48 = new javax.swing.JLabel();
@@ -498,7 +494,7 @@ public class PanelLugares extends javax.swing.JPanel {
         panel1.addTab("Lugares Turisticos", jPanel7);
 
         jPanel25.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel25.setBorder(javax.swing.BorderFactory.createBevelBorder(0));
+        jPanel25.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel25.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/a.jpg"))); // NOI18N
@@ -689,7 +685,7 @@ public class PanelLugares extends javax.swing.JPanel {
         jTabbedPane2.addTab("1 PISO", jPanel21);
 
         jPanel26.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel26.setBorder(javax.swing.BorderFactory.createBevelBorder(0));
+        jPanel26.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel26.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel83.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -1128,10 +1124,10 @@ public class PanelLugares extends javax.swing.JPanel {
         jLabel45.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel45.setText("Destino");
 
-        cboDestinoBus.setModel(new javax.swing.DefaultComboBoxModel(new String[] { ".....", "Amazonas", "Trujillo", "Lima", "Ica", "Puno", "Cuzco", "Arequipa", "Ayacucho" }));
-        cboDestinoBus.addActionListener(new java.awt.event.ActionListener() {
+        des.setModel(new javax.swing.DefaultComboBoxModel(new String[] { ".....", "Amazonas", "Trujillo", "Lima", "Ica", "Puno", "Cuzco", "Arequipa", "Ayacucho" }));
+        des.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cboDestinoBusActionPerformed(evt);
+                desActionPerformed(evt);
             }
         });
 
@@ -1152,7 +1148,7 @@ public class PanelLugares extends javax.swing.JPanel {
                 .addGap(25, 25, 25)
                 .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(cboDestinoBus, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(des, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel49, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1178,7 +1174,7 @@ public class PanelLugares extends javax.swing.JPanel {
                 .addGap(39, 39, 39)
                 .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(cboDestinoBus, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(des, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(txtNuBus, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1534,7 +1530,7 @@ public class PanelLugares extends javax.swing.JPanel {
         jPanel14.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 850, 360));
 
         jPanel19.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel19.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Reportes Estadisticos", 0, 0, new java.awt.Font("Tahoma", 1, 18))); // NOI18N
+        jPanel19.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Reportes Estadisticos", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 18))); // NOI18N
 
         txtCantidadPersona.setEditable(false);
         txtCantidadPersona.setBorder(javax.swing.BorderFactory.createTitledBorder("Cantidad de Personas Reservadas"));
@@ -1611,21 +1607,24 @@ public class PanelLugares extends javax.swing.JPanel {
         if (cboDestino.getSelectedIndex() == 0) {
             alerta("Por favor llene los espacios en blanco.");
         } else if(optNacional.isSelected()){
-          PersonasTuristicas a = new PersonaTuristaNacional(leeNombre(), leeApellido(), leeDNI(), leeEmail(), leeTelefono(), leeEdad(), leeDestino(), leeDestOrigen());
+          PersonasTuristicas a = new PersonaTuristaNacional(leeNombre(), leeApellido(), leeDNI(), leeEmail(), leeTelefono(), leeEdad(), leeDestino(), leeDestOrigen(),leeBus(),leeAsiento());
             al.agrega(a);
             al.graba();
+            al.insert();
             lista(a);
             mensaje("Reservado exitosamente!!!");  
         } else if(optExtra.isSelected()){
-          PersonasTuristicas a = new PersonaTuristaExtranjero(leeNombre(), leeApellido(), leeDNI(), leeEmail(), leeTelefono(), leeEdad(), leeDestino(), leeDestOrigen());
+          PersonasTuristicas a = new PersonaTuristaExtranjero(leeNombre(), leeApellido(), leeDNI(), leeEmail(), leeTelefono(), leeEdad(), leeDestino(), leeNumCarnetExtranjero(),leeBus(),leeAsiento());
             al.agrega(a);
             al.graba();
+            al.insert();
             lista(a);
             mensaje("Reservado exitosamente!!!");  
         } else if(optUniv.isSelected()){
-          PersonasTuristicas a = new PersonaTuristaUniversitario(leeNombre(), leeApellido(), leeDNI(), leeEmail(), leeTelefono(), leeEdad(), leeDestino(), leeDestOrigen());
+          PersonasTuristicas a = new PersonaTuristaUniversitario(leeNombre(), leeApellido(), leeDNI(), leeEmail(), leeTelefono(), leeEdad(), leeDestino(), leeNumCarnet(),leeBus(),leeAsiento());
             al.agrega(a);
             al.graba();
+            al.insert();
             lista(a);
             mensaje("Reservado exitosamente!!!");  
         }
@@ -1644,10 +1643,14 @@ public class PanelLugares extends javax.swing.JPanel {
         txtApellido.setEnabled(false);
         asi.setEnabled(false);
         txtDNI.setEnabled(false);
+        txtEdad1.setEnabled(false);
+        busN1.setEnabled(false);
         txtCorreo.setEnabled(false);
         txtTelefono.setEnabled(false);
         cboDestino.setSelectedIndex(0);
         txtPrecio.setEnabled(false);
+        buttonGroup1.clearSelection();
+        panel1.setSelectedIndex(2);
         //Botones
         btnNacional.setEnabled(false);
         cboDestino.setEnabled(false);
@@ -1678,7 +1681,6 @@ public class PanelLugares extends javax.swing.JPanel {
             imprimeTabla("", i, 6);
             imprimeTabla("", i, 7);
             imprimeTabla("", i, 8);
-            imprimeTabla("", i, 9);
 
         }
 //        if (al.tamaño() == 0) {
@@ -1771,7 +1773,6 @@ public class PanelLugares extends javax.swing.JPanel {
         busN1.setEnabled(true);
         txtCorreo.setEnabled(true);
         txtTelefono.setEnabled(true);
-        cboDestino.setSelectedIndex(0);
         txtPrecio.setEnabled(true);
         //Botones
         btnNacional.setEnabled(true);
@@ -1791,7 +1792,6 @@ public class PanelLugares extends javax.swing.JPanel {
         busN1.setEnabled(true);
         txtCorreo.setEnabled(true);
         txtTelefono.setEnabled(true);
-        cboDestino.setSelectedIndex(0);
         txtPrecio.setEnabled(true);
         //Botones
         btnNacional.setEnabled(true);
@@ -1811,7 +1811,6 @@ public class PanelLugares extends javax.swing.JPanel {
         busN1.setEnabled(true);
         txtCorreo.setEnabled(true);
         txtTelefono.setEnabled(true);
-        cboDestino.setSelectedIndex(0);
         txtPrecio.setEnabled(true);
         //Botones
         btnNacional.setEnabled(true);
@@ -1833,16 +1832,17 @@ public class PanelLugares extends javax.swing.JPanel {
         jTabla.setRowSorter(trsFiltro);
     }//GEN-LAST:event_txtBuscaPorTipoViajeroKeyTyped
 
-    private void cboDestinoBusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboDestinoBusActionPerformed
+    private void desActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_desActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cboDestinoBusActionPerformed
+    }//GEN-LAST:event_desActionPerformed
 String bus,asiento;
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-     
+     int de = des.getSelectedIndex();
      bus = txtNuBus.getText();
-     if(bus.equals("")){
-     JOptionPane.showMessageDialog(this, "NO ESCRIBIO EL BUS");
+     if(bus.equals("") || de == 0){
+     JOptionPane.showMessageDialog(this, "NO ESCRIBIO LOS DATOS");
      }else{
+     cboDestino.setSelectedIndex(de);
      ll1.setForeground(new Color(254,000,000));
      asiento = l1.getText();
      panel1.setSelectedIndex(3);
@@ -2296,6 +2296,8 @@ String bus,asiento;
         txtNombre.setText("");
         txtApellido.setText("");
         asi.setText("");
+        txtEdad1.setText("");
+        busN1.setText("");
         txtDNI.setText("");
         txtCorreo.setText("");
         txtTelefono.setText("");
@@ -2391,7 +2393,7 @@ String bus,asiento;
     }
 
     public int leeEdad() {
-        return Integer.parseInt(asi.getText());
+        return Integer.parseInt(txtEdad1.getText());
     }
 
     public String leeNombre() {
@@ -2413,14 +2415,21 @@ String bus,asiento;
     public String leeEmail() {
         return txtCorreo.getText();
     }
-
+    
+    public String leeBus(){
+      return busN1.getText();
+    }
+    
+    public String leeAsiento(){
+     return asi.getText();
+    }
 
     public String leeNumCarnetExtranjero() {
-        return "Extranjero";
+        return txtCarnetExtranjero.getText();
     }
 
     public String leeNumCarnet() {
-        return "Universitario";
+        return txtNumCarnet.getText();
     }
 
     public int leeDestino() {
@@ -2428,7 +2437,7 @@ String bus,asiento;
     }
 
     public String leeDestOrigen() {
-        return "Nacional";
+        return txtDondeVive.getText();
     }
 
     public String leeDesti() {
@@ -2746,7 +2755,7 @@ String bus,asiento;
     private javax.swing.JComboBox cboBuscar;
     private javax.swing.JComboBox cboDestino;
     private javax.swing.JComboBox cboDestino2;
-    private javax.swing.JComboBox cboDestinoBus;
+    private javax.swing.JComboBox des;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;

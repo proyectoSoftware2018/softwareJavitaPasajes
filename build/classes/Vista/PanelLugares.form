@@ -2348,7 +2348,7 @@
                                           <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                                           <Component id="jLabel45" min="-2" pref="79" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="cboDestinoBus" min="-2" pref="138" max="-2" attributes="0"/>
+                                          <Component id="des" min="-2" pref="138" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="jLabel49" min="-2" pref="57" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
@@ -2378,7 +2378,7 @@
                                           <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                                  <Component id="cboDestinoBus" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                                                  <Component id="des" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
                                                   <Component id="jLabel45" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="103" groupAlignment="3" attributes="0">
@@ -2400,7 +2400,7 @@
                                     <Property name="text" type="java.lang.String" value="Destino"/>
                                   </Properties>
                                 </Component>
-                                <Component class="javax.swing.JComboBox" name="cboDestinoBus">
+                                <Component class="javax.swing.JComboBox" name="des">
                                   <Properties>
                                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                                       <StringArray count="9">
@@ -2417,7 +2417,7 @@
                                     </Property>
                                   </Properties>
                                   <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cboDestinoBusActionPerformed"/>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="desActionPerformed"/>
                                   </Events>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="jLabel4">
