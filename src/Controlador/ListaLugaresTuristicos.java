@@ -85,4 +85,17 @@ public class ListaLugaresTuristicos  {
         }
         return c;
     }
+   
+   public boolean buscar(String Asiento, String dni, String bus){
+       boolean exite = false;
+       for(int i =0 ; i<lth.size(); i++){
+           if(lth.get(i).getAsiento().equalsIgnoreCase(Asiento) && lth.get(i).getDni().equalsIgnoreCase(dni)
+               && lth.get(i).getBus().equalsIgnoreCase(bus)){
+               exite = true;
+           }else{
+               exite=false;
+           }
+       }
+       return exite;
+   }
 }

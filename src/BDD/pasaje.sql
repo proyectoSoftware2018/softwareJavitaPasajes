@@ -3,7 +3,7 @@ tipo int(1),
 nombre varchar(200),
 apellido varchar(200),
 edad int(11),
-dni varchar(8) primary key,
+dni varchar(8),
 telefono varchar(9),
 email varchar(200),
 lugar varchar(200),
@@ -11,6 +11,7 @@ valor varchar(100),
 bus varchar(50),
 asiento varchar(50)
 );
+
 
 delimiter$$
 create procedure insertarturista(
